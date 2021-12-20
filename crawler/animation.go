@@ -9,10 +9,10 @@ import (
 )
 
 func main() {
-	testHttpNewRequest()
+	requestAnimation()
 }
 
-func testHttpNewRequest() {
+func requestAnimation() {
 
 	// create a client
 	client := http.Client{}
@@ -30,7 +30,7 @@ func testHttpNewRequest() {
 	for _, year := range years {
 		for _, season := range seasons {
 			// set url and create the request
-			url := "https://zh.moegirl.org.cn/日本" + year + "年"+ season +"季动画"
+			url := "https://zh.moegirl.org.cn/日本" + year + "年" + season + "季动画"
 			request, err := http.NewRequest("GET", url, nil)
 			CheckErr(err)
 
@@ -44,7 +44,6 @@ func testHttpNewRequest() {
 			response, err := client.Do(request)
 			CheckErr(err)
 			defer response.Body.Close()
-
 
 			// print the status code
 			fmt.Printf("status code: %v\n", response.StatusCode)
@@ -60,19 +59,18 @@ func testHttpNewRequest() {
 				Animation_Arr := Animation_Regexp.FindAllString(string(data), -1)
 
 				// print the data in Animation_Arr
-				for i, _ := range Animation_Arr {
+				for _, str := range Animation_Arr {
 					// process Animation_Arr[i]
-					str := Animation_Arr[i]
 					str = content_Regexp.FindString(str)
-					str = str[1:len(str)-1]
+					str = str[1 : len(str)-1]
 
 					// detect whether it's the data of an animation
-					if(!(str == "简介" || str == "簡介" || str == "STAFF" || str == "CAST" || str == "导航" || str == "参见" || str == "參見" || str == "導航")) {
+					if !(str == "简介" || str == "簡介" || str == "STAFF" || str == "CAST" || str == "导航" || str == "参见" || str == "參見" || str == "導航") {
 						bool, _ := regexp.MatchString("(总|系列)?(监督|監督)(.*)?：(.*)?", str)
-						if(!bool) {
-							fmt.Println(num,"----------")
+						if !bool {
+							fmt.Println(num, "----------")
 							num++
-							fmt.Println(year,season)
+							fmt.Println(year, season)
 						}
 						fmt.Println(str)
 					}
