@@ -83,11 +83,13 @@ func requestVoice() {
 	} else {
 
 		// Voice_Regexp detect gender or voice actor/actress
-		Voice_Regexp := regexp.MustCompile("<td width=\"([0-9]*)?px\" bgcolor=\"#([A-F0-9]*)?\">所属公司</td>\n<td><a href=\"/(.*)?\" title=\"(.*)?\">(.*)?</a>\n</td>")
+		Voice_Regexp := regexp.MustCompile("<td width=\"([0-9]*)?px\" bgcolor=\"#([a-fA-F0-9]*)?\">(\n)?所属公司(\n)?</td>(\n)?<td>(\n)?(<a href=\"/(.*)?\" title=\"(.*)?\">(.*)?</a>|(.*)?)(\n)?</td>")
 
 		// analyze the content that filter with Voice_Regexp
-		content_Regexp := regexp.MustCompile("<a href=\"/(.*)?\" title=\"(.*)?\">(.*)?</a>")
+		content_Regexp_1 := regexp.MustCompile("<a href=\"/(.*)?\" title=\"(.*)?\">(.*)?</a>")
 		sub_content_Regexp := regexp.MustCompile(">(.*)?</a>")
+
+		content_Regexp_2 := regexp.MustCompile("<td>(\n)?(.*)?(\n)?</td>")
 
 		// file buffer
 		bs := make([]byte, 8192*8, 8192*8)
@@ -159,18 +161,41 @@ func requestVoice() {
 					// 1st filter of company
 					str := Voice_Regexp.FindString(string(data))
 					if(len(str) != 0) {
-						// 2nd filter
-						str = content_Regexp.FindString(str)
-						// 3rd filter
-						str = sub_content_Regexp.FindString(str)
+						if content_Regexp_1.FindString(str) != "" {
+							// 2nd filter
+							str = content_Regexp_1.FindString(str)
+							// 3rd filter
+							str = sub_content_Regexp.FindString(str)
 
-						// modify str
-						str = str[1:len(str)-4]
+							// modify str
+							if str[len(str)-5] == '\n' {
+								str = str[1:len(str)-5]
+							} else {
+								str = str[1:len(str)-4]
+							}
+						} else {
+							// 2nd filter
+							str = content_Regexp_2.FindString(str)
+							// modify str
+							if str[0] == '\n' {
+								str = str[1:]
+							}
+							if str[len(str)-6] == '\n' {
+								str = str[4:len(str)-6]
+							} else {
+								str = str[4:len(str)-5]
+							}
+						}
 						str = value[0:len(value)-1] + "," + str + "\n"
 					} else {
 						str = value + "\n"
 					}
 
+					// write the data into file voice.txt
+					file.Write([]byte(str))
+				} else if response.StatusCode == 404 {
+					// tag it's 404
+					str := value[0: len(value)-1] + " -----------> 404 <-----------\n"
 					// write the data into file voice.txt
 					file.Write([]byte(str))
 				} else {
