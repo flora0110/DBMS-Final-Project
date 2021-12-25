@@ -97,16 +97,38 @@ func requestVoice() {
 		// close file voice_buff.txt
 		file.Close()
 
-		// open or create file voice.txt
-		file, err = os.OpenFile("voice.txt", os.O_RDWR|os.O_CREATE, os.ModePerm)
-		defer file.Close()
 
 		// get the array of voice actor/actress
 		voice_buff := strings.Split(string(bs[:n]), "\n")
 
+		// voice.txt detect
+		file, blockErr := os.Open("voice.txt")
+		// initialize have_done
+		have_done := -1
+		// forCount store which have done
+		forCount := []string{}
+		// if voice.txt exist
+		if blockErr == nil {
+			// relloc bs
+			bs = make([]byte, 16384*8, 16384*8)
+			// read file voice.txt and store into bs
+			n, err = file.Read(bs)
+			// close file voice.txt
+			file.Close()
+			// forCount store which have done
+			forCount = strings.Split(string(bs[:n]), "\n")
+			// set have_done
+			have_done = have_done + len(forCount)
+		}
 
+		// open or create file voice.txt
+		file, err = os.OpenFile("voice.txt", os.O_RDWR|os.O_CREATE, os.ModePerm)
+		defer file.Close()
+
+		// process datas
 		for i, value := range voice_buff {
-			if len(value) != 0 {
+
+			if i >= have_done && len(value) != 0 { /* haven't done */
 				// get name(values[0]) and gender(values[1])
 				values := strings.Split(value, ",")
 				// set url of voice actor/actress 's page
@@ -130,6 +152,7 @@ func requestVoice() {
 
 				// if request success
 				if response.StatusCode == 200 {
+
 					// store the html into data
 					data, err := ioutil.ReadAll(response.Body)
 					CheckErr(err)
@@ -145,18 +168,32 @@ func requestVoice() {
 						str = str[1:len(str)-4]
 						str = value[0:len(value)-1] + "," + str + "\n"
 					} else {
-						// TODO: detect whether add "\n"
 						str = value + "\n"
 					}
 
 					// write the data into file voice.txt
 					file.Write([]byte(str))
+				} else {
+					fmt.Println("Blocking QAQ or Robot detecting ...")
+					break
 				}
+
+			} else { /* have done */
+				fmt.Printf("the %dth case have done, print out\n", i)
+				// write the data back into file voice.txt
+				file.Write([]byte(forCount[i] + "\n"))
 			}
-			// sleep
-			if(i % 20 == 0 || i % 27 == 0) {
+
+			// sleep Zzzz
+			if i >= have_done && (i % 20 == 0 || i % 27 == 0) {
 				// sleep 1 seconds
-				time.Sleep(1 * time.Second)
+				if i % 7 == 0 {
+					time.Sleep(7 * time.Second)
+				} else if i % 3 == 0 {
+					time.Sleep(4 * time.Second)
+				} else {
+					time.Sleep(2 * time.Second)
+				}
 				fmt.Println("Sleep Over.....")
 			}
 		}
