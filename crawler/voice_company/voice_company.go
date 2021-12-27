@@ -15,14 +15,14 @@ func main() {
 	// create a client
 	client := http.Client{}
 
-	file, err := os.Open("anima_company_link.txt")
+	file, err := os.Open("voice_company_link.txt")
 
 	if err != nil {
-		file, err := os.OpenFile("anima_company_link.txt", os.O_RDWR|os.O_CREATE, os.ModePerm)
+		file, err := os.OpenFile("voice_company_link.txt", os.O_RDWR|os.O_CREATE, os.ModePerm)
 		defer file.Close()
 
 		// set url and create the request
-		url := "https://zh.moegirl.org.cn/%E5%8A%A8%E7%94%BB"
+		url := "https://zh.moegirl.org.cn/index.php?title=Template:%E6%97%A5%E6%9C%AC%E5%A3%B0%E4%BC%98%E4%BA%8B%E5%8A%A1%E6%89%80&variant=zh-tw&mobileaction=toggle_view_desktop"
 		request, err := http.NewRequest("GET", url, nil)
 		CheckErr(err)
 
@@ -40,12 +40,13 @@ func main() {
 		// print the status code
 		fmt.Printf("status code: %v\n", response.StatusCode)
 
-		companyNiHon_Regexp := regexp.MustCompile("<tr style=\"height:2px;\"><td></td></tr><tr><td class=\"navbox-group\" style=\";padding:0 1em;;\">日本</td>(.*)?</tr>")
-		link_Regexp := regexp.MustCompile("href=\"/([-a-zA-Z0-9%()]*)?\" title")
+		companyNiHon_Regexp := regexp.MustCompile("<tr><td class=\"navbox-group\" style=\";padding:0 1em;;\">聲優事務所</td><td style=\"text-al(\n)?ign:left;border-left:2px solid #fdfdfd;width:100%;padding:0px;;;\" class=\"navbox-list navbox-odd\"><div style=\"padding:0 0.25em\">(.*)?</tr>")
+		link_Regexp := regexp.MustCompile("href=\"/([A-Za-z0-9-%()_?.&;=]*)?\" title")
 
 		// store the html into data
 		data, err := ioutil.ReadAll(response.Body)
 		str := string(data)
+
 		str = companyNiHon_Regexp.FindString(str)
 		links := link_Regexp.FindAllString(str, -1)
 
@@ -58,32 +59,32 @@ func main() {
 		// file buffer
 		bs := make([]byte, 8192*8, 8192*8)
 		n := -1
-		// read file anima_company_link.txt and store into bs
+		// read file voice_company_link.txt and store into bs
 		n, err = file.Read(bs)
-		// close file anima_company_link.txt
+		// close file voice_company_link.txt
 		file.Close()
 
-		// get the array of anima company link
-		anima_company_link_buff := strings.Split(string(bs[:n]), "\n")
+		// get the array of voice company link
+		voice_company_link_buff := strings.Split(string(bs[:n]), "\n")
 
 		// TODO: fix RE
 		data_Regexp := regexp.MustCompile("<td style=\"(.*)?;\" bgcolor=\"#([A-Fa-f0-9]*)?\">(\n)?(((名稱|名称)</td>(\n)?<td>(.*)?)|((網址|网址)</td>(\n)?<td><a target=\"(.*)?\" rel=\"(.*)?\" class=\"(.*)?\" href=\"(.*)?\">(.*)?</a>)|(總部地址</td>(\n)?<td>(.*)?))(\n)?</td>")
 		data_name_position_Regexp := regexp.MustCompile("<td>(.*)?(\n)?</td>")
 		data_link_Regexp := regexp.MustCompile("href=\"(.*)?\">")
 
-		// anima_company.txt detect
-		file, blockErr := os.Open("anima_company.txt")
+		// voice_company.txt detect
+		file, blockErr := os.Open("voice_company.txt")
 		// initialize have_done
 		have_done := -1
 		// forCount store which have done
 		forCount := []string{}
-		// if anima_company.txt exist
+		// if voice_company.txt exist
 		if blockErr == nil {
 			// relloc bs
 			bs = make([]byte, 16384*8, 16384*8)
-			// read file anima_company.txt and store into bs
+			// read file voice_company.txt and store into bs
 			n, err = file.Read(bs)
-			// close file anima_company.txt
+			// close file voice_company.txt
 			file.Close()
 			// forCount store which have done
 			forCount = strings.Split(string(bs[:n]), "\n")
@@ -91,11 +92,11 @@ func main() {
 			have_done = have_done + len(forCount)
 		}
 
-		// open or create file anima_company.txt
-		file, err = os.OpenFile("anima_company.txt", os.O_RDWR|os.O_CREATE, os.ModePerm)
+		// open or create file voice_company.txt
+		file, err = os.OpenFile("voice_company.txt", os.O_RDWR|os.O_CREATE, os.ModePerm)
 		defer file.Close()
 
-		for i, link := range anima_company_link_buff {
+		for i, link := range voice_company_link_buff {
 
 			if i >= have_done && len(link) != 0 { /* haven't done */
 				// set url and create the request
