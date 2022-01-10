@@ -67,10 +67,11 @@ func main() {
 		// get the array of voice company link
 		voice_company_link_buff := strings.Split(string(bs[:n]), "\n")
 
-		// TODO: fix RE
-		data_Regexp := regexp.MustCompile("<td style=\"(.*)?;\" bgcolor=\"#([A-Fa-f0-9]*)?\">(\n)?(((名稱|名称)</td>(\n)?<td>(.*)?)|((網址|网址)</td>(\n)?<td><a target=\"(.*)?\" rel=\"(.*)?\" class=\"(.*)?\" href=\"(.*)?\">(.*)?</a>)|(總部地址</td>(\n)?<td>(.*)?))(\n)?</td>")
-		data_name_position_Regexp := regexp.MustCompile("<td>(.*)?(\n)?</td>")
-		data_link_Regexp := regexp.MustCompile("href=\"(.*)?\">")
+		// RE
+		data_Regexp := regexp.MustCompile("<td style=\".*?;\" bgcolor=\"#[A-Fa-f0-9]*?\">(\n)?(((名稱|名称)</td>(\n)?<td>.*?)|((網址|网址)</td>(\n)?<td><a target=\".*?\" rel=\".*?\" class=\".*?\" href=\".*?\">.*?</a>))(\n)?</td>")
+		data_name_position_Regexp := regexp.MustCompile("<td>.*?(\n)?</td>")
+		name_filter := regexp.MustCompile(">.*?<")
+		data_link_Regexp := regexp.MustCompile("href=\".*?\">")
 
 		// voice_company.txt detect
 		file, blockErr := os.Open("voice_company.txt")
@@ -120,7 +121,6 @@ func main() {
 				// store the html into data
 				data, err := ioutil.ReadAll(response.Body)
 				str := string(data)
-				//fmt.Println(str)
 				datas := data_Regexp.FindAllString(str, -1)
 
 				data_str := ""
@@ -129,26 +129,26 @@ func main() {
 					if link_bool {
 						data = data_link_Regexp.FindString(data)
 						data = data[6 : len(data)-2]
-						data_str += ("," + data)
+						data_str += (",," + data)
 					} else {
-						name_bool, _ := regexp.MatchString("(名稱|名称)", data)
 						data = data_name_position_Regexp.FindString(data)
 						if data[len(data)-6] == '\n' {
 							data = data[4 : len(data)-6]
 						} else {
 							data = data[4 : len(data)-5]
 						}
-						if name_bool {
-							data_str += data
-						} else {
-							data_str += ("," + data)
+						tag_bool, _ := regexp.MatchString(">(.*)?<", data)
+						if tag_bool {
+							data = name_filter.FindString(data)
+							data = data[1 : len(data)-1]
 						}
+						data_str += ("\"" + data + "\"")
 					}
 				}
 				file.Write([]byte(data_str + "\n"))
 			} else { /* have done */
 				fmt.Printf("the %dth case have done, print out\n", i)
-				// write the data back into file anima_company.txt
+				// write the data back into file voice_company.txt
 				file.Write([]byte(forCount[i] + "\n"))
 			}
 

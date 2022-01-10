@@ -28,7 +28,7 @@ func requestAnimation() {
 		num := 0
 
 		// Animation_Regexp detect animation or director
-		Animation_Regexp := regexp.MustCompile("(<span class=\"mw-headline\" id=\"(.*)?\">(.*)?</span>)|(<li>(总|系列)?(监督|監督)([^輔佐]*)?：(.*)?</li>)|<li>(動畫製作|动画制作)：(.*)?</li>")
+		Animation_Regexp := regexp.MustCompile("(<span class=\"mw-headline\" id=\".*?\">.*?</span>)|(<li>(总|系列)?(监督|監督)[^輔佐]*?：.*?</li>)|(<li>(動畫製作|动画制作)：.*?</li>)")
 		// analyze the content that filter with Animation_Regexp
 		content_Regexp := regexp.MustCompile(">(.*)<")
 		// get the name of director or company
@@ -80,17 +80,17 @@ func requestAnimation() {
 								fmt.Println(str)
 								str = director_company_Regexp.FindString(str)
 								str = str[3:]
-								file.Write([]byte(",D:" + str))
+								file.Write([]byte(",,D:" + str))
 							} else if company_bool {
 								fmt.Println(str)
 								str = director_company_Regexp.FindString(str)
 								str = str[3:]
-								file.Write([]byte(",C:" + str))
+								file.Write([]byte(",,C:" + str))
 							} else {
 								fmt.Println(num, "----------")
 								num++
 								fmt.Println(year, season, "\n", str)
-								file.Write([]byte("\n" + year + "," + season + "," + str))
+								file.Write([]byte("\n" + year + ",," + season + ",," + str))
 							}
 						}
 					}

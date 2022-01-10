@@ -40,6 +40,7 @@ func main() {
 		// print the status code
 		fmt.Printf("status code: %v\n", response.StatusCode)
 
+		// RE
 		companyNiHon_Regexp := regexp.MustCompile("<tr style=\"height:2px;\"><td></td></tr><tr><td class=\"navbox-group\" style=\";padding:0 1em;;\">日本</td>(.*)?</tr>")
 		link_Regexp := regexp.MustCompile("href=\"/([-a-zA-Z0-9%()]*)?\" title")
 
@@ -66,10 +67,11 @@ func main() {
 		// get the array of anima company link
 		anima_company_link_buff := strings.Split(string(bs[:n]), "\n")
 
-		// TODO: fix RE
-		data_Regexp := regexp.MustCompile("<td style=\"(.*)?;\" bgcolor=\"#([A-Fa-f0-9]*)?\">(\n)?(((名稱|名称)</td>(\n)?<td>(.*)?)|((網址|网址)</td>(\n)?<td><a target=\"(.*)?\" rel=\"(.*)?\" class=\"(.*)?\" href=\"(.*)?\">(.*)?</a>)|(總部地址</td>(\n)?<td>(.*)?))(\n)?</td>")
+		// RE
+		data_Regexp := regexp.MustCompile("<td style=\".*?;\" bgcolor=\"[#A-Za-z0-9]*?\">(\n)?(((名稱|名称)</td>(\n)?<td>.*?)|((網址|网址|官方網站)</td>(\n)?<td><a target=\".*?\" rel=\".*?\" class=\".*?\" href=\".*?\">.*?</a>)|((總部地址|总部地址|公司地址)</td>(\n)?<td>.*?))(\n)?</td>")
 		data_name_position_Regexp := regexp.MustCompile("<td>(.*)?(\n)?</td>")
-		data_link_Regexp := regexp.MustCompile("href=\"(.*)?\">")
+		name_filter := regexp.MustCompile(">(.*)?<")
+		data_link_Regexp := regexp.MustCompile("href=\"http([-#:a-zA-Z0-9&%./()]*)?\">")
 
 		// anima_company.txt detect
 		file, blockErr := os.Open("anima_company.txt")
@@ -119,7 +121,7 @@ func main() {
 				// store the html into data
 				data, err := ioutil.ReadAll(response.Body)
 				str := string(data)
-				//fmt.Println(str)
+
 				datas := data_Regexp.FindAllString(str, -1)
 
 				data_str := ""
@@ -128,7 +130,7 @@ func main() {
 					if link_bool {
 						data = data_link_Regexp.FindString(data)
 						data = data[6 : len(data)-2]
-						data_str += ("," + data)
+						data_str += (",," + data)
 					} else {
 						name_bool, _ := regexp.MatchString("(名稱|名称)", data)
 						data = data_name_position_Regexp.FindString(data)
@@ -137,10 +139,15 @@ func main() {
 						} else {
 							data = data[4 : len(data)-5]
 						}
+						tag_bool, _ := regexp.MatchString(">(.*)?<", data)
+						if tag_bool {
+							data = name_filter.FindString(data)
+							data = data[1 : len(data)-1]
+						}
 						if name_bool {
-							data_str += data
+							data_str += ("\"" + data + "\"")
 						} else {
-							data_str += ("," + data)
+							data_str += (",," + data)
 						}
 					}
 				}
