@@ -1,5 +1,6 @@
 # -*- coding = utf-8 -*-
 import os
+import re
 import psycopg2
 
 def animation():
@@ -70,9 +71,78 @@ def animation():
     # close connect
     conn.close()
 
+def anima_company():
+    herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
+    DATABASE_URL = os.popen(herokuCLI_command).read()[:-1]
+
+    # connect with database
+    conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+
+    # create cursor
+    cursor = conn.cursor()
+
+    # set SQL create table
+    SQL_create_command = '''
+        CREATE TABLE IF NOT EXISTS anima_company (
+            name VARCHAR(150) PRIMARY KEY,
+            position VARCHAR(400),
+            link VARCHAR(200)
+        );
+        '''
+
+    # execute SQL
+    cursor.execute(SQL_create_command)
+
+    # open anima_company/anima_company.txt
+    f = open("anima_company/anima_company.txt", "r", encoding="utf-8")
+    # get the content in anima_company/anima_company.txt
+    content = f.readlines()
+    # process datas in content
+    for datas in content:
+        datas = datas.strip().split(",,")
+        if len(datas[0]) == 0:
+            continue
+        # init (name, position, link)
+        name, position, link = datas[0][1:len(datas[0])-1], "NULL", "NULL"
+        name = re.sub("(^<.*?>)|(<.*?>$)", "", name)
+        name = re.sub("<.*?>", " ", name)
+
+        # get the value of position and link
+        for index, data in enumerate(datas):
+            if index > 0:
+                if data[0:4] == 'http':
+                    link = data
+                else:
+                    position = data
+                    position = re.sub("(^<.*?>)|(<.*?>$)", "", position)
+                    position = re.sub("<.*?>", " ", position)
+
+        # print out all data
+        print(name, position, link)
+        # set SQL insert data into table
+        SQL_insert_command = '''
+            INSERT INTO anima_company
+                (name, position, link)
+                VALUES (%s, %s, %s);
+        '''
+        # execute SQL
+        cursor.execute(SQL_insert_command, (name, position, link))
+
+    # close anima_company/anima_company.txt
+    f.close()
+
+    # commit change of database
+    conn.commit()
+
+    # close cursor
+    cursor.close()
+    # close connect
+    conn.close()
+
 
 def main():
-    # animation() # done
+    # animation()       # done
+    # anima_company()   # done
     print("hello world")
 
 

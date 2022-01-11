@@ -13,10 +13,10 @@
 "VIMS",,https://www.vims.co.jp/
 "81プロデュース",,http://www.81produce.co.jp/
 "エースクルー・エンタテインメント",,http://acecrew.co.jp/
-"株式会社S (S inc.)",,https://www.s-inc.jp/
-"大泽事务所",,http://osawa-inc.co.jp/
+"株式會社S (S inc.)",,https://www.s-inc.jp/
+"大澤事務所",,http://osawa-inc.co.jp/
 "Office Anemone",,http://www.office-anemone.com/
-"Office海风",,http://zimusyo-umikaze.com/
+"Office海風",,http://zimusyo-umikaze.com/
 "Office Watanabe",,http://zimusyo-umikaze.com/
 "object",,http://object-co.jp/
 "Gadget Link",,http://gadgetlink.jp/
@@ -41,7 +41,7 @@
 "Three Tree",,http://threetree.co.jp/
 "swallow",,https://swallow-p.com/actor.html
 "Dandelion",,http://www.ddl-ltd.co.jp/
-"东京俳优生活协同组合",,https://haikyo.co.jp/
+"東京俳優生活協同組合",,https://haikyo.co.jp/
 "Pugnus",,http://pugnus.co.jp/company/
 "Power Rise",,http://www.power-rise.jp/
 "Peerless Gerbera",,https://pg-wcf.co.jp/
@@ -65,4 +65,3 @@
 "Moulin Rouge Production",,http://moulinrouge-pro.com/
 "LOVE×TRAX Office",,http://love-trax.com/
 "Link Plan",,http://link-plan.net/index.html
-
