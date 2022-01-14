@@ -521,9 +521,9 @@ TARAKO,女,Troubador音樂事務所
 松谷彼哉,女,劇團昴
 松元惠,女,賢Production
 桃井晴子,女,Right Gauge（事務所）、AKIHABA LOVE RECORDS（唱片公司）
-田村由香里,女,Amuleto</a>(聲優事務所)<br /><a href="/5pb." title="5pb.">Cana aria
+田村由香里,女,Amuleto
 田口宏子,女,東京俳優生活協同組合
-田中理惠,女,Office Anemone
+田中理惠,女
 田中涼子,女
 望月久代,女,81 Produce
 魏涼子,女,青年座映畫放送
@@ -680,7 +680,7 @@ TARAKO,女,Troubador音樂事務所
 淺沼晉太郎,男,Dandelion
 青木崇,男,Office PAC
 青木強,男,Aksent
-日野聰,男
+日野聰,男,AXL ONE
 三戶耕三,男,Production Baobab
 三浦祥朗,男,青二事務所
 三宅健太,男,81 Produce
@@ -697,7 +697,7 @@ TARAKO,女,Troubador音樂事務所
 杉山大,男,Aksent
 杉山紀彰,男,Stay Luck
 上田燿司,男,Amuleto
-神谷浩史,男
+神谷浩史,男,青二事務所
 勝杏裡,男,賢Production
 勝沼紀義,男,Kekke Corporation
 石館光太郎,男
@@ -818,7 +818,7 @@ NEEKO,女,ASOBISYSTEM
 大塚琴美,女,AIR AGENCY
 島村侑,女,賢Production
 稻村優奈,女,AT Production
-德井青空,女
+德井青空,女,Avex Pictures
 洞內愛,女,B-Box
 東內麻里子,女,VIMS
 杜野真子,女,Sun Music Production
@@ -827,7 +827,7 @@ NEEKO,女,ASOBISYSTEM
 渡部優衣,女,Dandelion
 豐崎愛生,女,Music Ray'n
 福井裕佳梨,女,Wave Master
-福原綾香,女,自由身
+福原綾香,女,ACROSS ENTERTAINMENT
 福原香織,女,Bright Idea
 福圓美里,女,Sigma Seven
 富岡美沙子,女,ACROSS ENTERTAINMENT
@@ -852,7 +852,7 @@ NEEKO,女,ASOBISYSTEM
 恆松步,女,81Produce
 後藤麻衣,女,賢Production
 後藤沙緒裡,女,TOY'S FACTORY
-花澤香菜,女,大澤事務所</a>（聲優事務所）<br /><a href="/SACRA_MUSIC" title="SACRA MUSIC">SACRA MUSIC
+花澤香菜,女,大澤事務所
 荒川美穗,女,東京俳優生活協同組合
 荒浪和沙,女,BloomZ
 磯村知美,女,Max Mix
@@ -861,7 +861,7 @@ NEEKO,女,ASOBISYSTEM
 吉田真弓,女,I'm Enterprise
 佳村遙,女,I'm Enterprise
 加藤英美里,女,81Produce、PONY CANYON
-加隈亞衣,女
+加隈亞衣,女,Mausu Promotion
 甲斐田裕子,女,賢Production
 結城飛鳥,女,IAM Agency
 皆瀨麻里佳,女
@@ -874,7 +874,7 @@ NEEKO,女,ASOBISYSTEM
 近藤佳奈子,女,remax
 近藤唯,女,Kenyu Office
 井口裕香,女,大澤事務所
-井上麻里奈,女,Sigma Seven
+井上麻里奈,女,青二事務所
 井上優佳,女
 井澤詩織,女,Early Wing
 井之上奈奈,女,自由身
@@ -898,7 +898,7 @@ NEEKO,女,ASOBISYSTEM
 米澤圓,女,81 PRODUCE
 名塚佳織,女
 鳴海杏子,女,自由身
-明坂聰美,女
+明坂聰美,女,Amuleto
 木村珠莉,女,東京俳優生活協同組合
 木下鈴奈,女,Joint Office
 牧口真幸,女,81Produce
@@ -909,8 +909,8 @@ NEEKO,女,ASOBISYSTEM
 南里侑香,女,Space Craft Entertainment
 南條愛乃,女,Voice Kit(聲優事務所)<br />NBCUniversal Entertainment Japan(唱片公司)
 楠見藍子,女,Mausu Promotion
-楠田亞衣奈,女,VAP(唱片公司)
-能登麻美子,女,大澤事務所</a>（聲優事務所）<br /><a href="/ANIPLEX" class="mw-redirect" title="ANIPLEX">ANIPLEX
+楠田亞衣奈,女
+能登麻美子,女,大澤事務所
 能登有沙,女,L&amp;L Victor Entertainment、Solid Cube(動作捕捉及編舞業務)
 牛田裕子,女,青二事務所
 潘惠美,女,Atomic Monkey
@@ -954,3 +954,68 @@ NEEKO,女,ASOBISYSTEM
 升望,女,Raccoon Dog
 石川綾乃,女,東京俳優生活協同組合
 石川由依,女,mitt management
+石上靜香,女,大澤事務所
+石田嘉代,女,Kenyu Office
+辻步美,女,Mausu Promotion
+矢作紗友裡,女,I'm Enterprise
+世戶沙織,女,自由身
+水樹奈奈,女,StarCrew
+水澤史繪,女,青二事務所
+寺門仁美,女
+寺崎裕香,女,尾木Pro THE NEXT
+松嵜麗,女,Mausu Promotion
+松井惠理子,女,IAM AGENCY
+松浦知惠,女,Mausu Promotion
+松澤千晶,女,Horipro
+藤村鼓乃美,女,AIR AGENCY
+藤東知夏,女,Super Shark
+藤井幸代,女,青二Production
+藤田麻美,女,Kenyu Office
+藤田咲,女,ARTSVISION
+田村睦心,女,I'm Enterprise
+田野麻美,女,Amuse
+田中晶子,女,Office PAC
+田中杏沙,女,Mausu Promotion
+田中真奈美,女,Production Baobab
+尾崎真實,女,自由身
+尾畑美依奈,女,劇團青年座
+武石步實,女,amuleto
+五十嵐裕美,女,Mausu Promotion
+武隈史子,女,Plandas
+西明日香,女,Sigma Seven
+西野陽子,女,Quatre Stella
+喜多村英梨,女,TMS MUSIC(唱片公司)
+喜多丘千陽,女
+下釜千昌,女,自由身
+下田麻美,女,ARTSVISION
+下屋則子,女,81Produce
+夏芽,女,Ace Crew Entertainment
+仙台惠理,女,Green Note
+相羽愛奈,女,響HiBiKi
+相澤舞,女,青二事務所
+小見川千明,女,Crocodile
+小堀友裡繪,女,AIR AGENCY
+小笠原亞里沙,女,向日葵劇團
+小林沙苗,女,Sigma Seven
+小林未沙,女,賢Production
+小林優,女,Holy Peak
+小林元子,女,Production Ace
+小牧未侑,女,Peerless Gerbera
+小平有希,女,賢Production
+小清水亞美,女
+小松未可子,女,平田事務所
+新谷良子,女,Vi-vo(事務所)<br />Lantis(唱片公司)
+新井里美,女,新井聲作所
+新名彩乃,女,VIMS
+新田惠海,女,DIFFERENCE(事務所)<br />Stray Cats(唱片公司)
+行成桃姬,女,ARTSVISION
+須藤祐實,女,青二事務所
+巽悠衣子,女,I'm Enterprise
+野村真悠華,女,VIMS
+野水伊織,女,Production Ace
+野中藍,女,青二Production
+葉山郁美,女,Clare Voice
+一木千洋,女,青二Production
+伊瀨茉莉也,女,ACROSS ENTERTAINMENT
+伊藤加奈惠,女,青二Production
+伊藤靜,女,賢Production

@@ -83,7 +83,7 @@ func requestVoice() {
 	} else {
 
 		// Voice_Regexp detect gender or voice actor/actress
-		Voice_Regexp := regexp.MustCompile("<td width=\"[0-9]*?px\" bgcolor=\"#[a-fA-F0-9]*?\">(\n)?所属公司(\n)?</td>(\n)?<td>(\n)?(<a href=\"/.*?\" title=\".*?\">.*?</a>|.*?)(\n)?</td>")
+		Voice_Regexp := regexp.MustCompile("<td width=\"[0-9]*?px\" bgcolor=\"#[a-fA-F0-9]*?\">(\n)?所(属|屬)公司(\n)?</td>(\n)?<td>(\n)?(<a href=\"/.*?\" title=\".*?\">.*?</a>|.*?)(\n)?</td>")
 
 		// analyze the content that filter with Voice_Regexp
 		content_Regexp_1 := regexp.MustCompile("<a href=\"/.*?\" title=\".*?\">.*?</a>")

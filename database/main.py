@@ -34,6 +34,9 @@ def animation():
     content = f.readlines()
     # process datas in content
     for datas in content:
+        # converse &amp; to &
+        datas = re.sub("amp;", "", datas)
+
         datas = datas.strip().split(",,")
         # init (name, year, season, director, company)
         name, year, season, director, company = datas[2], datas[0], datas[1], "NULL", "NULL"
@@ -143,7 +146,47 @@ def anima_company():
     # close connect
     conn.close()
 
-# undone
+# TODO: commit character into database
+def character():
+    print("charater")
+    herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
+    DATABASE_URL = os.popen(herokuCLI_command).read()[:-1]
+
+    # connect with database
+    conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+
+    # create cursor
+    cursor = conn.cursor()
+
+    # set SQL create table
+    SQL_create_command = '''
+        CREATE TABLE IF NOT EXISTS character (
+            
+        );
+        '''
+
+    # execute SQL
+    cursor.execute(SQL_create_command)
+
+    # open character/character.txt
+    f = open("character/character.txt", "r", encoding="utf-8")
+    # get the content in character/character.txt
+    content = f.readlines()
+
+    # TODO: process datas in content
+
+    # close character/character.txt
+    f.close()
+
+    # commit change of database
+    conn.commit()
+
+    # close cursor
+    cursor.close()
+    # close connect
+    conn.close()
+
+
 def voice():
     herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
     DATABASE_URL = os.popen(herokuCLI_command).read()[:-1]
@@ -169,21 +212,28 @@ def voice():
     f = open("voice/voice.txt", "r", encoding="utf-8")
     # get the content in voice/voice.txt
     content = f.readlines()
+
     # process datas in content
     for datas in content:
-        # TODO: RE
+        # fix 404
+        datas = re.sub(" -----------> 404 <-----------", "", datas)
 
-        datas = datas.strip().split(",")
+        datass = datas.strip().split(",")
         # init (name, gender, company)
-        name, gender, company = datas[0], datas[1], datas[2]
+        name, gender, company = datass[0], datass[1], "NULL"
+        if len(datass) == 3:
+            company = datass[2]
+            company = re.sub("<br( )?(/)?>", "、", company)
+            company = re.sub("(<.*?>|amp;)", "", company)
 
         # print out all data
-        print()
+        print(name, "|", gender, "|", company)
+
         # set SQL insert data into table
         SQL_insert_command = f'''
             INSERT INTO voice
                 (name, gender, company)
-                VALUES (%s, %s);
+                VALUES (%s, %s, %s);
         '''
         # execute SQL
         cursor.execute(SQL_insert_command, (name, gender, company))
@@ -258,7 +308,8 @@ def voice_company():
 def main():
     #animation()        # done
     #anima_company()    # done
-    voice()
+    character() # undone
+    #voice()            # done
     #voice_company()    # done
     print("hello world")
 
