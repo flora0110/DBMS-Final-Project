@@ -57,7 +57,7 @@
 "Pro Fit",,http://www.pro-fit.co.jp/
 "Raccoon Dog"
 "Horipro International",,http://www.horipro-international.com/
-"m&amp;i",,http://mand-i.jp/
+"m&i",,http://mand-i.jp/
 "Mausu Promotion",,https://mausu.net/
 "Max Mix",,http://www.maxmix.co.jp/
 "Music Ray'n",,https://musicrayn.com/

@@ -72,6 +72,7 @@ def animation():
     # close connect
     conn.close()
 
+
 def anima_company():
     herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
     DATABASE_URL = os.popen(herokuCLI_command).read()[:-1]
@@ -142,10 +143,123 @@ def anima_company():
     # close connect
     conn.close()
 
+# undone
+def voice():
+    herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
+    DATABASE_URL = os.popen(herokuCLI_command).read()[:-1]
+
+    # connect with database
+    conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+
+    # create cursor
+    cursor = conn.cursor()
+
+    # set SQL create table
+    SQL_create_command = '''
+        CREATE TABLE IF NOT EXISTS voice (
+            name VARCHAR(70) PRIMARY KEY,
+            gender VARCHAR(5),
+            company VARCHAR(70)
+        );
+        '''
+    # execute SQL
+    cursor.execute(SQL_create_command)
+
+    # open voice/voice.txt
+    f = open("voice/voice.txt", "r", encoding="utf-8")
+    # get the content in voice/voice.txt
+    content = f.readlines()
+    # process datas in content
+    for datas in content:
+        # TODO: RE
+
+        datas = datas.strip().split(",")
+        # init (name, gender, company)
+        name, gender, company = datas[0], datas[1], datas[2]
+
+        # print out all data
+        print()
+        # set SQL insert data into table
+        SQL_insert_command = f'''
+            INSERT INTO voice
+                (name, gender, company)
+                VALUES (%s, %s);
+        '''
+        # execute SQL
+        cursor.execute(SQL_insert_command, (name, gender, company))
+
+    # close voice/voice.txt
+    f.close()
+
+    # commit change of database
+    conn.commit()
+
+    # close cursor
+    cursor.close()
+    # close connect
+    conn.close()
+
+
+def voice_company():
+    herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
+    DATABASE_URL = os.popen(herokuCLI_command).read()[:-1]
+
+    # connect with database
+    conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+
+    # create cursor
+    cursor = conn.cursor()
+
+    # set SQL create table
+    SQL_create_command = '''
+        CREATE TABLE IF NOT EXISTS voice_company (
+            name VARCHAR(70) PRIMARY KEY,
+            link VARCHAR(150)
+        );
+        '''
+    # execute SQL
+    cursor.execute(SQL_create_command)
+
+    # open voice_company/voice_company.txt
+    f = open("voice_company/voice_company.txt", "r", encoding="utf-8")
+    # get the content in voice_company/voice_company.txt
+    content = f.readlines()
+    # process datas in content
+    for datas in content:
+        datas = datas.strip().split(",,")
+        # init (name, link)
+        name, link = datas[0][1:len(datas[0])-1], "NULL"
+        if len(datas) == 2:
+            link = datas[1]
+
+        # print out all data
+        print(name, "||", link)
+        # set SQL insert data into table
+        SQL_insert_command = f'''
+            INSERT INTO voice_company
+                (name, link)
+                VALUES (%s, %s);
+        '''
+        # execute SQL
+        cursor.execute(SQL_insert_command, (name, link))
+
+    # close voice_company/voice_company.txt
+    f.close()
+
+    # commit change of database
+    conn.commit()
+
+    # close cursor
+    cursor.close()
+    # close connect
+    conn.close()
+
 
 def main():
-    # animation()       # done
-    # anima_company()   # done
+    #animation()        # done
+    #anima_company()    # done
+    voice()
+    #voice_company()    # done
     print("hello world")
 
 
