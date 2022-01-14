@@ -3,6 +3,7 @@ import os
 import re
 import psycopg2
 
+
 def animation():
     herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
     DATABASE_URL = os.popen(herokuCLI_command).read()[:-1]
@@ -106,6 +107,7 @@ def anima_company():
         name, position, link = datas[0][1:len(datas[0])-1], "NULL", "NULL"
         name = re.sub("(^<.*?>)|(<.*?>$)", "", name)
         name = re.sub("<.*?>", " ", name)
+        name = re.sub(" +", " ", name)
 
         # get the value of position and link
         for index, data in enumerate(datas):
@@ -116,6 +118,7 @@ def anima_company():
                     position = data
                     position = re.sub("(^<.*?>)|(<.*?>$)", "", position)
                     position = re.sub("<.*?>", " ", position)
+                    position = re.sub(" +", " ", position)
 
         # print out all data
         print(name, position, link)
