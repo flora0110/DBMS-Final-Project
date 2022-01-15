@@ -176,7 +176,7 @@ def character():
     # get the content in character/character.txt
     content = f.readlines()
 
-    # TODO: process datas in content
+    # process datas in content
     for datas in content:
         # filter
         datas = re.sub("(<.*?>)|(amp;)", "", datas)

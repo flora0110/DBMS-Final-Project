@@ -12,17 +12,15 @@
 <div class="container bg-light border">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand text-light" href="#">Anima</a>
+        <a class="navbar-brand text-light" href="/amina">Anima</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active text-light" aria-current="page" href="#">Voice</a>
-            <a class="nav-link text-light" href="#">Director</a>
-            <a class="nav-link text-light" href="#">Character</a>
-            <a class="nav-link text-light" href="/raeY">Year</a>
-            <a class="nav-link text-light" href="#">Company</a>
+            <a class="nav-link active text-light" aria-current="page" href="/amina">Animation</a>
+            <a class="nav-link text-light" href="/retcarahC">Character</a>
+            <a class="nav-link text-light" href="/ecioV">Voice</a>
           </div>
         </div>
       </div>
@@ -32,7 +30,7 @@
             <br/>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
               <div class="container-fluid">
-                <a class="navbar-brand col-2" >Year</a>
+                <a class="navbar-brand col-2" >Character</a>
                     <form class="d-flex col-4">
                     <select name="which" class="form-select col-3" aria-label="Default select example" onchange="changeYear(this.value)">
                       <option value="all" class="drop-down" selected>all</option>
@@ -80,18 +78,18 @@
             <div class="container">
                 <div class="row justify-content-between">
                     {% if page == left %}
-                        <button type="button" class="col-1 btn btn-secondary" id="pre" onclick="location.href='/raeY?page={{ left }}&year={{ year }}&season={{ season }}'" disabled>
+                        <button type="button" class="col-1 btn btn-secondary" id="pre" onclick="location.href='/character?page={{ left }}&character_name={{ character_name }}'" disabled>
                     {% else %}
-                        <button type="button" class="col-1 btn btn-secondary" id="pre" onclick="location.href='/raeY?page={{ left }}&year={{ year }}&season={{ season }}'">
+                        <button type="button" class="col-1 btn btn-secondary" id="pre" onclick="location.href='/character?page={{ left }}&character_name={{ character_name }}'">
                     {% endif %}
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
                               <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
                             </svg>
                         </button>
                     {% if page == right %}
-                        <button type="button" class="col-1 btn btn-secondary" id="next" onclick="location.href='/raeY?page={{ right }}&year={{ year }}&season={{ season }}'" disabled>
+                        <button type="button" class="col-1 btn btn-secondary" id="next" onclick="location.href='/character?page={{ right }}&character_name={{ character_name }}'" disabled>
                     {% else %}
-                        <button type="button" class="col-1 btn btn-secondary" id="next" onclick="location.href='/raeY?page={{ right }}&year={{ year }}&season={{ season }}'">
+                        <button type="button" class="col-1 btn btn-secondary" id="next" onclick="location.href='/character?page={{ right }}&character_name={{ character_name }}'">
                     {% endif %}
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
                               <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
