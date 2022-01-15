@@ -1,0 +1,7 @@
+$(function () {
+    $(".anima").click(function () {
+        var name = $(this).text();
+        const url = `/retcarahC?&anima_name=${name}`
+        $(location).attr('href',url);
+    });
+});
