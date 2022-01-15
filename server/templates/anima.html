@@ -85,6 +85,7 @@
               </div>
             </nav>
             <br/>
+
             <div class="container">
             <table  class="table table-striped" class="for-table" border="1">
                 <thead class="bg-dark text-white">
@@ -103,7 +104,7 @@
                         <th scope="row" class="h6 text-black-50" ></th>
                         <td>{{ data[1] }}</td>
                         <td>{{ data[2] }}</td>
-                        <td class="anima">{{ data[0] }}</td>
+                        <td class="anima" value="aaa">{{ data[0] }}</td>
                         {% if data[3] != "NULL" %}
                             <td>{{ data[3] }}</td>
                         {% else %}
@@ -144,17 +145,39 @@
             </div>
         </div>
     </div>
-
-</body>
-<script type="text/javascript">
-    search_anima();
-    function changeTableTd(){
+    <script type="text/javascript">
+    /*search_anima();
+    function search_anima(){
         td = document.getElementsByClassName("anima");
+        name=document.getElementById("anima").value
+        alarm(name);
         $(function () {
             $(".anima").click(function () {
-                window.location.href();
+                console.log("click");
+                window.location.href('/retcarahC?&anima_name=$name');
             });
         });
+    };*/
+    search_anima();
+    /**
+     *
+     * 添加鼠標點擊事件，可以改變table中表格的值
+     * */
+    function search_anima(){
+        // 獲取所有的單元格
+        //td = document.getElementsByClassName("anima");
+        $(function () {
+            $(".anima").click(function () {
+                console.log("click");
+                var name = $(this).text();
+                const url = `/retcarahC?&anima_name=${name}`
+                console.log(url);
+                $(location).attr('href',url);
+            })
+            ;
+        });
     };
-</script>
+    </script>
+</body>
+
 </html>
