@@ -70,8 +70,8 @@ def year_page():
     if end == prelen:
         right = page
 
-    #return render_template("year.html",datas=data, year=year, season=season, left=left, right=right)
-    return render_template("year.html",datas=data, year=year, season=season, left=left, right=right)
+    #return render_template("year.html",datas=data, year=year, season=season, left=left, right=right, page=page)
+    return render_template("year.html",datas=data, year=year, season=season, left=left, right=right, page=page)
 
 
 if __name__ == '__main__':
