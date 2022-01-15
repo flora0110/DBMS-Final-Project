@@ -28,14 +28,58 @@
         <div class="row">
             <div class="col">
             <br/>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-light">
               <div class="container-fluid">
-                <a class="navbar-brand col-2" >Animation</a>
-                    <form class="d-flex col-4">
-                    <select name="which" class="form-select col-3" aria-label="Default select example" onchange="changeYear(this.value)">
-                      <option value="all" class="drop-down" selected>all</option>
-                      <option value="2020" class="drop-down">2020</option>
-                      <option value="2021" class="drop-down">2021</option>
+                <a class="navbar-brand col-8 text-secondary" >Animation</a>
+                  <form class="d-flex col-1">
+                    <select name="which" class="form-select col-3" aria-label="Default select example" onchange="window.location.href=this.options[selectedIndex].value">
+                        {% if season == "all" %}
+                            <option value="/amina?page={{ left }}&year={{ year }}&season=all" class="drop-down" selected>all season</option>
+                        {% else %}
+                            <option value="/amina?page={{ left }}&year={{ year }}&season=all" class="drop-down">all season</option>
+                        {% endif %}
+
+                        {% if season == "春" %}
+                            <option value="/amina?page={{ left }}&year={{ year }}&season=春" class="drop-down" selected>春</option>
+                        {% else %}
+                            <option value="/amina?page={{ left }}&year={{ year }}&season=春" class="drop-down">春</option>
+                        {% endif %}
+
+                        {% if season == "夏" %}
+                            <option value="/amina?page={{ left }}&year={{ year }}&season=夏" class="drop-down" selected>夏</option>
+                        {% else %}
+                            <option value="/amina?page={{ left }}&year={{ year }}&season=夏" class="drop-down">夏</option>
+                        {% endif %}
+                        {% if season == "秋" %}
+                            <option value="/amina?page={{ left }}&year={{ year }}&season=秋" class="drop-down" selected>秋</option>
+                        {% else %}
+                            <option value="/amina?page={{ left }}&year={{ year }}&season=秋" class="drop-down">秋</option>
+                        {% endif %}
+                        {% if season == "冬" %}
+                            <option value="/amina?page={{ left }}&year={{ year }}&season=冬" class="drop-down" selected>冬</option>
+                        {% else %}
+                            <option value="/amina?page={{ left }}&year={{ year }}&season=冬" class="drop-down">冬</option>
+                        {% endif %}
+                    </select>
+                    </form>
+                    <form class="d-flex col-3">
+                    <select name="which" class="form-select col-3" aria-label="Default select example" onchange="window.location.href=this.options[selectedIndex].value">
+                        {% if year == "all" %}
+                            <option value="/amina?page={{ left }}&year=all&season={{ season }}" class="drop-down" selected>all year</option>
+                        {% else %}
+                            <option value="/amina?page={{ left }}&year=all&season={{ season }}" class="drop-down">all year</option>
+                        {% endif %}
+
+                        {% if year == "2020" %}
+                            <option value="/amina?page={{ left }}&year=2020&season={{ season }}" class="drop-down" selected>2020</option>
+                        {% else %}
+                            <option value="/amina?page={{ left }}&year=2020&season={{ season }}" class="drop-down">2020</option>
+                        {% endif %}
+                        {% if year == "2021" %}
+                            <option value="/amina?page={{ left }}&year=2021&season={{ season }}" class="drop-down" selected>2021</option>
+                        {% else %}
+                            <option value="/amina?page={{ left }}&year=2021&season={{ season }}" class="drop-down">2021</option>
+                        {% endif %}
                     </select>
                     </form>
               </div>
@@ -46,11 +90,11 @@
                 <thead class="bg-dark text-white">
                     <tr>
                         <th scope="col"></th>
-                        <th scope="col">年分</th>
-                        <th scope="col">季度</th>
-                        <th scope="col">動畫</th>
-                        <th scope="col">導演</th>
-                        <th scope="col">製作公司</th>
+                        <th scope="col-1">年分</th>
+                        <th scope="col-1">季度</th>
+                        <th scope="col-6">動畫</th>
+                        <th scope="col-2">導演</th>
+                        <th scope="col-2">製作公司</th>
                     </tr>
                 </thead>
                 <tbody id="test">
@@ -59,7 +103,7 @@
                         <th scope="row" class="h6 text-black-50" ></th>
                         <td>{{ data[1] }}</td>
                         <td>{{ data[2] }}</td>
-                        <td>{{ data[0] }}</td>
+                        <td class="anima">{{ data[0] }}</td>
                         {% if data[3] != "NULL" %}
                             <td>{{ data[3] }}</td>
                         {% else %}
@@ -100,5 +144,17 @@
             </div>
         </div>
     </div>
+
 </body>
+<script type="text/javascript">
+    search_anima();
+    function changeTableTd(){
+        td = document.getElementsByClassName("anima");
+        $(function () {
+            $(".anima").click(function () {
+                window.location.href();
+            });
+        });
+    };
+</script>
 </html>
