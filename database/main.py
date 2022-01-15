@@ -164,7 +164,7 @@ def character():
             name VARCHAR(50),
             anima VARCHAR(50),
             voice VARCHAR(30),
-            PRIMARY KEY (name, anima)
+            PRIMARY KEY (name, anima, voice)
         );
         '''
 
@@ -329,11 +329,11 @@ def voice_company():
 
 
 def main():
-    #animation()        # done
-    #anima_company()    # done
-    character()        # done
+    animation()        # done
+    anima_company()    # done
     voice()            # done
     voice_company()    # done
+    character()  # done
     print("hello world")
 
 
