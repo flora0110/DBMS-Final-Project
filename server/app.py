@@ -31,10 +31,12 @@ def anima_page():
     SQL_select_command = """
         SELECT * FROM animation
     """
+
+
     if year != "all" and season != "all":
         SQL_select_command = f"""
             SELECT * FROM animation
-            WHERE year={year} AND season={season};
+            WHERE year={year} AND season='{season}';
         """
     else:
         if year != "all":
@@ -45,8 +47,9 @@ def anima_page():
         elif season != "all":
             SQL_select_command = f"""
                 SELECT * FROM animation
-                WHERE season={season};
+                WHERE season='{season}';
             """
+
     ####################### }here
 
     # execute SQL
