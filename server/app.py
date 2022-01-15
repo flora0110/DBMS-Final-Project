@@ -4,7 +4,7 @@ import psycopg2
 
 
 app = Flask(__name__)
-
+app._static_folder = './static'
 
 @app.route('/')
 def hello_world():  # put application's code here
