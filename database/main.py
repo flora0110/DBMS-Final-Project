@@ -146,9 +146,9 @@ def anima_company():
     # close connect
     conn.close()
 
-# TODO: commit character into database
+
 def character():
-    print("charater")
+
     herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
     DATABASE_URL = os.popen(herokuCLI_command).read()[:-1]
 
@@ -161,7 +161,10 @@ def character():
     # set SQL create table
     SQL_create_command = '''
         CREATE TABLE IF NOT EXISTS character (
-            
+            name VARCHAR(50),
+            anima VARCHAR(50),
+            voice VARCHAR(30),
+            PRIMARY KEY (name, anima)
         );
         '''
 
@@ -174,6 +177,26 @@ def character():
     content = f.readlines()
 
     # TODO: process datas in content
+    for datas in content:
+        # filter
+        datas = re.sub("(<.*?>)|(amp;)", "", datas)
+        datas = datas.strip().split(",,")
+
+        if len(datas[0]) == 0:
+            continue
+        # init (name, position, link)
+        name, anima, voice = datas[0], datas[1], datas[2]
+
+        # print out all data
+        print(name, "|", anima, "|", voice)
+        # set SQL insert data into table
+        SQL_insert_command = '''
+            INSERT INTO character 
+                (name, anima, voice)
+                VALUES (%s, %s, %s);
+        '''
+        # execute SQL
+        cursor.execute(SQL_insert_command, (name, anima, voice))
 
     # close character/character.txt
     f.close()
@@ -308,9 +331,9 @@ def voice_company():
 def main():
     #animation()        # done
     #anima_company()    # done
-    character() # undone
-    #voice()            # done
-    #voice_company()    # done
+    character()        # done
+    voice()            # done
+    voice_company()    # done
     print("hello world")
 
 

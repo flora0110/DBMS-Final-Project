@@ -6,32 +6,16 @@ import (
 	"net/http"
 	"os"
 	"regexp"
-	"strings"
 	"time"
 )
 
 func main() {
-	requestAnimation()
+	requestCharacter()
 }
 
-func requestAnimation() {
+func requestCharacter() {
 
-	// to read the name of animations
-	file, err := os.Open("animation.txt")
-	// file buffer
-	bs := make([]byte, 8192*8, 8192*8)
-	n := -1
-	// read file animation.txt and store into bs
-	n, err = file.Read(bs)
-	// close file animation.txt
-	file.Close()
-
-	// get the array of animation name
-	animation_name_buff := strings.Split(string(bs[:n]), "\n")
-	// to count the num of animation index
-	num := 0
-
-	file, err = os.OpenFile("character.txt", os.O_RDWR|os.O_CREATE, os.ModePerm)
+	file, err := os.OpenFile("character.txt", os.O_RDWR|os.O_CREATE, os.ModePerm)
 	defer file.Close()
 
 	if err == nil {
@@ -41,7 +25,11 @@ func requestAnimation() {
 		seasons := [4]string{"冬", "春", "夏", "秋"}
 
 		// Cast_Regexp detect casts
-		Cast_Regexp := regexp.MustCompile("<span class=\"mw-headline\" id=\"CAST[_0-9]*?\">.*?</span></h3>(\n)?<div class=\"columns-list\" style=\"column-count:2;;;;column-rule-style:none;;\"> \n<ul><li>.*?</li>(\n<li>.*?</li>)*?</ul>")
+		Cast_Regexp := regexp.MustCompile("(<span class=\"mw-headline\" id=\"CAST[_0-9]*?\">.*?</span></h3>(\n)?<div class=\"columns-list\" style=\"column-count:2;;;;column-rule-style:none;;\"> \n<ul><li>.*?</li>(\n<li>.*?</li>)*?</ul>)|(<span class=\"mw-headline\" id=\".*?\">.*?</span>)")
+		// Anima_Name_Regexp detect anima_name
+		Anima_Name_Regexp := regexp.MustCompile("^<span class=\"mw-headline\" id=\".*?\">.*?</span>$")
+		// analyze the content that filter with Anima_Name_Regexp
+		anima_content_Regexp := regexp.MustCompile(">(.*?)<")
 		// analyze the content that filter with Cast_Regexp
 		content_Regexp := regexp.MustCompile("<li>.*?：.*?</li>")
 		// analyze the character that filter with content_Regexp
@@ -77,25 +65,34 @@ func requestAnimation() {
 					fmt.Println("request success")
 					CheckErr(err)
 
+					// anima_name_buffer
+					anima_name := ""
+
 					// filter data with Cast_Regexp
 					Cast_Arr := Cast_Regexp.FindAllString(string(data), -1)
-
 
 					// print the data in Cast_Arr
 					for _, str := range Cast_Arr {
 						// process Cast_Arr[i]
-						casts := content_Regexp.FindAllString(str, -1)
-						for _, data := range casts {
-							data = data[4:len(data)-5]
-							character := character_Regexp.FindString(data)
-							character = character[:len(character)-3]
-							cast := cast_Regexp.FindString(data)
-							cast = cast[3:]
-							fmt.Println(character + ",," + animation_name_buff[num] + ",," + cast)
-							file.Write([]byte(character + ",," + animation_name_buff[num] + ",," + cast + "\n"))
+						if Anima_Name_Regexp.MatchString(str) {
+							str = anima_content_Regexp.FindString(str)
+							str = str[1 : len(str)-1]
+							if !(str == "简介" || str == "簡介" || str == "STAFF" || str == "CAST" || str == "导航" || str == "参见" || str == "參見" || str == "導航") {
+								anima_name = str
+							}
+						} else {
+							casts := content_Regexp.FindAllString(str, -1)
+							for _, data := range casts {
+								data = data[4 : len(data)-5]
+								character := character_Regexp.FindString(data)
+								character = character[:len(character)-3]
+								cast := cast_Regexp.FindString(data)
+								cast = cast[3:]
+								fmt.Println(character + ",," + anima_name + ",," + cast)
+								file.Write([]byte(character + ",," + anima_name + ",," + cast + "\n"))
+							}
+							fmt.Println()
 						}
-						fmt.Println()
-						num++
 					}
 				} else { // if request fail
 					fmt.Println("request fail", response.Status)

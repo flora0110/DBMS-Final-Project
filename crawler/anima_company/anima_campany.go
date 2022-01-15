@@ -11,7 +11,10 @@ import (
 )
 
 func main() {
+	requestAnimaCompany()
+}
 
+func requestAnimaCompany() {
 	// create a client
 	client := http.Client{}
 

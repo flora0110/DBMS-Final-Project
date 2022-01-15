@@ -11,7 +11,10 @@ import (
 )
 
 func main() {
+	requestVoiceCompany()
+}
 
+func requestVoiceCompany() {
 	// create a client
 	client := http.Client{}
 
