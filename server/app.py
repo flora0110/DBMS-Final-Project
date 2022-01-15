@@ -81,7 +81,7 @@ def anima_page():
 @app.route('/retcarahC')
 def character_page():
     page = request.args.get('page', default=0, type=int)
-    character_name = request.args.get('character_name', default="all")
+    anima_name = request.args.get('anima_name', default="all")
 
     herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
     DATABASE_URL = os.popen(herokuCLI_command).read()[:-1]
@@ -94,11 +94,11 @@ def character_page():
 
     ####################### here{
 
-    SQL_select_command = ''''''
+    SQL_select_command = """
+        SELECT * FROM character
+    """
 
     ####################### }here
-    data = []
-    print()
 
     # execute SQL
     cursor.execute(SQL_select_command)
@@ -123,7 +123,7 @@ def character_page():
     if end == prelen:
         right = page
 
-    return render_template("character.html", character_name=character_name, left=left, right=right, page=page)
+    return render_template("character.html", datas=data, anima_name=anima_name, left=left, right=right, page=page)
 
 
 
