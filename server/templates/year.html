@@ -11,20 +11,35 @@
 <!--    <script src="{{ url_for('static', filename='js3/year.js') }}" type="text/javascript"></script>-->
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--    </br>-->
+<!--    <div class="container">-->
+<!--        <a class="navbar-brand col-2" >Year</a>-->
+<!--        <form class="d-flex col-4">-->
+<!--        <select name="which" class="form-select col-3" aria-label="Default select example" onchange="changeYear(this.value)">-->
+<!--          <option value="all" class="drop-down" selected>all</option>-->
+<!--          <option value="2020" class="drop-down">2020</option>-->
+<!--          <option value="2021" class="drop-down">2021</option>-->
+<!--        </select>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--    </br>-->
+<!--</nav>-->
+<br/>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" >Year</a>
-      <form class="d-flex">
-        <select name="which">
-          <option value="all" selected>all</option>
-          <option value="2020">2020</option>
-          <option value="2021">2021</option>
+    <a class="navbar-brand col-2" >Year</a>
+        <form class="d-flex col-4">
+        <select name="which" class="form-select col-3" aria-label="Default select example" onchange="changeYear(this.value)">
+          <option value="all" class="drop-down" selected>all</option>
+          <option value="2020" class="drop-down">2020</option>
+          <option value="2021" class="drop-down">2021</option>
         </select>
-      </form>
-    </div>
+        </form>
   </div>
 </nav>
-
+<br/>
+<div class="container">
 <table  class="table table-striped" class="for-table" border="1">
     <thead class="bg-dark text-white">
         <tr>
@@ -38,7 +53,7 @@
     </thead>
     <tbody id="test"></tbody>
 </table>
-
+</div>
 <div class="container">
     <div class="row justify-content-between">
         <button type="button" class=" col-1 btn btn-secondary" id="pre" disabled = true>
@@ -53,9 +68,12 @@
         </button>
     </div>
 </div>
+</br>
 <script>
     var page=0;
     var len;
+    var whichYear=-1;
+    var start_2021=0,start_2020=0;
     function next() {
         page+=50;
         //alert(page);
@@ -67,33 +85,33 @@
             button1.disabled = false;
         }
         var button2 = document.getElementById('next');
-        if(page>=(len-50)) {
+        if(page>=(len-50) || (whichYear==2021 && page>(start_2020-50)) ) {
 		    button2.disabled = true;
         }
         else{
             button2.disabled = false;
         }
-        //console.log(page);
+        console.log(page);
         drawTable();
     }
     function pre() {
         page-=50;
         //alert(page);
         var button1 = document.getElementById('pre');
-        if(page<=0) {
+        if(page<=0 || (whichYear==2020 && page<(start_2020)) ) {
 		    button1.disabled = true;
         }
         else{
             button1.disabled = false;
         }
         var button2 = document.getElementById('next');
-        if(page>=(len-50)) {
+        if(page>=(len-50) || (whichYear==2021 && page>(start_2020-50)) ) {
 		    button2.disabled = true;
         }
         else{
             button2.disabled = false;
         }
-        //console.log(page);
+        console.log(page);
         drawTable();
     }
     var newdata =[];
@@ -107,27 +125,41 @@
         len = data.length;
         var k=0;
         for (var i =0 ; i < len; i++) {
-            if(data[i][1]==2021) newdata.push(data[i]);
+            if(data[i][1]==2021) {
+                newdata.push(data[i]);
+            }
         }
+        start_2020=newdata.length+1;
+        //console.log(start_2020);
         for (var i =0 ; i < len; i++) {
+            if(data[i][1]==2021) {break;}
             newdata.push(data[i]);
-            if(data[i][1]==2021) break;
+
         }
         //console.log(newdata);
     }
-    function drawTable(data){
+    function drawTable(){
         var forTable = document.querySelector('tbody');
         for (var i =page ; i < page+50; i++) {
             if(i>len) break;
-            forTable.innerHTML +=
-                '<tr>' +
-                    '<th scope="row">'+(i+1)+'</th>'+
+            if(whichYear==2021 && i>start_2020) break;
+            if(newdata[i][1]==whichYear || whichYear==-1){
+                for(var j=0;j<5;j++){
+                    if(newdata[i][j]=="NULL") {newdata[i][j]="";}
+                }
+
+                forTable.innerHTML +=
+                    '<tr>' +
+                    '<th scope="row" class="h6 text-black-50" >'+(i+1)+'</th>'+
                     '<td>' + newdata[i][1] + '</td>' +
                     '<td>' + newdata[i][2] + '</td>' +
                     '<td>' + newdata[i][0] + '</td>' +
                     '<td>' + newdata[i][3] + '</td>' +
                     '<td>' + newdata[i][4] + '</td>' +
                 '</tr>';
+            }
+
+
         }
     }
 
@@ -143,7 +175,41 @@
         pre();
       });
     });
-    
+    function changeYear(data){
+        if(data==2020) {
+            $(document).ready(function(){
+                $("#test").empty();
+                page=start_2020;
+                whichYear=2020;
+                var button1 = document.getElementById('pre');
+                button1.disabled = true;
+                drawTable();
+            });
+        }
+        if(data==2021) {
+            $(document).ready(function(){
+                $("#test").empty();
+                page=start_2021;
+                whichYear=2021;
+                var button1 = document.getElementById('pre');
+                button1.disabled = true;
+
+                drawTable();
+            });
+        }
+        if(data=="all") {
+            $(document).ready(function(){
+                $("#test").empty();
+                page=0;
+                var button1 = document.getElementById('pre');
+                button1.disabled = true;
+                whichYear=-1;
+                drawTable();
+            });
+        }
+        console.log(data);
+    }
+
 </script>
 </body>
 </html>
