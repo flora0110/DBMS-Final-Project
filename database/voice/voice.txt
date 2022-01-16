@@ -1019,3 +1019,921 @@ NEEKO,女,ASOBISYSTEM
 伊瀨茉莉也,女,ACROSS ENTERTAINMENT
 伊藤加奈惠,女,青二Production
 伊藤靜,女,賢Production
+儀武祐子,女,自由身
+櫻川惠,女,株式會社S
+櫻井浩美,女,Office Watanabe
+櫻咲千依,女,自由身
+永峰遙,女,東京俳優生活協同組合
+優木加奈,女,VIMS
+優希知冴,女,Kenyu Office
+又吉愛,女,ARTSVISION
+淵上舞,女,m&amp;i
+原奈津子,女,Crocodile
+原紗友裡,女,81 Produce
+原田瞳,女
+原由實,女,ARTSVISION
+遠藤綾,女,Office PAC
+遠藤沙季,女,賢production
+澤城美雪,女,青二Production
+齋藤彩夏,女,青二事務所
+齋藤楓子,女,JTB Entertainment
+齋藤千和,女,I'm Enterprise
+齋藤桃子,女,自由身
+沼倉愛美,女,ARTSVISION
+照井春佳,女,青二事務所
+真堂圭,女,AXL-ONE
+植田佳奈,女,I'm Enterprise
+中村繪裡子,女,ARTSVISION
+中島愛,女,Stardust Promotion（聲優事務所）、FlyingDog（唱片公司）
+中島寬,女,自由身
+中島明,女,賢Production
+中津真莉,女,Across Entertainment
+中里望,女,東京俳優生活協同組合
+中上育實,女,Aksent
+中尾衣裡,女,大澤事務所
+中原麻衣,女,I'm Enterprise
+種田梨沙,女,大澤事務所
+洲崎綾,女,I'm Enterprise
+竹達彩奈,女,Link Plan
+竹內夕己美,女,懸樋Production
+竹下禮奈,女,LEOPARD STEEL
+莊司宇芽香,女,青二事務所
+莊子裕衣,女,Amuleto
+諏訪彩花,女,ARTSVISION
+佐藤聰美,女,青二事務所
+佐藤花,女,ACROSS ENTERTAINMENT
+佐藤惠,女,AIR AGENCY
+佐藤美由希,女,Kenyu Office
+佐藤利奈,女,東京俳優生活協同組合
+佐藤朱,女,青二Production
+佐佐木望,女
+KENN,男,Zynchro
+阿部大樹,男,Early Wing
+阿部敦,男,賢Production
+安達勇人,男,RUNWAY FEELD
+安齊一博,男,Mausu Promotion
+白川周作,男,Production Ace
+白井悠介,男,Early Wing
+拜真之介,男,AIR AGENCY
+坂卷學,男,Mausu Promotion
+本橋大輔,男,VIMS
+比上孝浩,男,SSP
+濱野大輝,男,ARTSVISION
+蒼井翔太,男,株式會社S
+長谷川芳明,男,Across Entertainment
+成家義哉,男,I'm Enterprise
+赤羽根健治,男,青二事務所
+赤澤涼太,男,尾木Pro The Next
+沖野晃司,男,Atomic monkey
+川田祐,男,Raccoon Dog
+村瀨步,男,VIMS
+村上裕哉,男,Mausu Promotion
+村田太志,男,ACROSS ENTERTAINMENT
+大河元氣,男,Amuleto
+大下孝太,男,Honey Rush
+代永翼,男,賢Production
+島崎信長,男,青二事務所
+德本英一郎,男,NEVERLAND ARTS
+德森圭輔,男,Studio Jumo
+渡邊紘,男,Kenyu Office
+鍛治本大樹,男,Animo Produce
+帆世雄一,男,Across Entertainment
+豐永利行,男,SUPER ECCENTRIC THEATER
+峰健一,男,Raccoon Dog
+逢坂力,男,81Produce
+逢坂良太,男,EARLY WING
+福田賢二,男,青年座
+福原耕平,男,青二事務所
+岡本信彥,男,Raccoon Dog
+岡部涼音,男,尾木Pro The Next
+高坂篤志,男,AIR AGENCY
+高坂知也,男,Mausu Promotion
+高城元氣,男,I'm Enterprise
+高階俊嗣,男,ARTSVISION
+高梨謙吾,男,ARTSVISION
+高木俊,男,自由身
+高木裕平,男,劇團昴
+高橋大輔,男,Production Tanc
+高橋良輔,男,swallow
+高橋孝治,男,賢Production
+高橋研二,男,賢Production
+高橋英則,男,Mausu Promotion
+根本幸多,男,青二事務所
+宮本譽之,男,Kenyu Office
+宮內告典,男,Ace Crew Entertainment
+宮崎寬務,男,青二事務所
+宮田哲朗,男,AIR AGENCY
+宮野真守,男,劇團向日葵、KING RECORDS
+古川慎,男
+光部樹,男,Atomic Monkey
+關幸司,男,Raccoon Dog
+龜山雄慈,男,WITH LINE
+河本啟佑,男,Production Ace
+河西健吾,男,Mausu Promotion
+黑澤剛史,男,nexeed
+橫山遵,男,WITH LINE
+橫田大輔,男,賢Production
+後藤弘樹,男
+荒井聰太,男,青二事務所
+會一太郎,男,青二事務所
+加藤拓二,男,Theatre Echo
+榎木淳彌,男,Atomic Monkey
+間宮康弘,男,Kenyu Office
+江口拓也,男,81 Produce
+江越彬紀,男,東京俳優生活協同組合
+金本涼輔,男,青二事務所
+金城大和,男,Stay Luck
+近松孝丞,男,演劇集團圓
+近藤浩德,男,Atomic Monkey
+井川秀榮,男,Production Tanc
+井口祐一,男,東京俳優生活協同組合
+景浦大輔,男,Power Rise
+酒井廣大,男,Early Wing
+酒井俊輔,男,JTB Entertainment
+酒卷光宏,男,81 Produce
+堀井茶渡,男,Mausu Promotion
+駒田航,男,81Produce
+利根健太朗,男,I'm Enterprise
+笠間淳,男,東京俳優生活協同組合
+林勇,男,賢Production
+鈴木達央,男,I'm Enterprise
+鈴木裕鬥,男,Amuleto
+瀧村直樹,男,ALBA
+鹿糠光明,男,Kenyu Office
+露木德幸,男,Production Tanc
+落合福嗣,男,青二事務所
+茂木孝允,男,Mausu Promotion
+美齊津惠友,男,賢Production
+米內佑希,男,81Produce
+木村良平,男,向日葵劇團
+木島隆一,男,Mausu Promotion
+內匠靖明,男,東京俳優生活協同組合
+片山公輔,男,Production Tanc
+粕谷雄太,男,青二事務所
+浦田涉,男,swallow
+前田弘喜,男,AIR AGENCY
+前野智昭,男,ARTSVISION
+淺利遼太,男,賢Production
+染谷俊之,男,株式會社GFA
+入野自由,男,junction
+三好翼,男,Production Ace
+三品建,男
+森島秀太,男,響HiBiKi
+山本彬,男,AIR AGENCY
+山本和臣,男,Production Ace
+山本匠馬,男,G-STAR.PRO
+山口清裕,男,SSP
+山口翔平,男,Wonder Space
+山口智廣,男,B-Box
+山下大輝,男,ARTSVISION
+山中真尋,男,Kenyu Office
+杉村憲司,男,Office PAC
+杉田智和,男,AGRS
+神尾晉一郎,男,81Produce
+神原大地,男,I'm Enterprise
+石上裕一,男,Mausu Promotion
+石狩勇氣,男,REMAX
+矢野獎吾,男,劇團Super Eccentric Theater
+市來光弘,男,Mausu Promotion
+柿原徹也,男,Zynchro
+室元氣,男,Remax
+狩野翔,男,東京俳優生活協同組合
+水越健,男,Production Ace
+寺島惇太,男,Kenyu Office
+寺島拓篤,男,AXL ONE
+松本健太,男,東京俳優生活協同組合
+松岡禎丞,男,I'm Enterprise
+松久博記,男,AIR AGENCY
+松原大典,男,青二事務所
+太田哲治,男,81 Produce
+藤原祐規,男,Amuleto
+田代哲哉,男,Amuleto
+田尻浩章,男,81Produce
+田丸篤志,男,Mausu Promotion
+田中宏樹,男,文學座
+樋口智透,男,自由身
+土岐隼一,男,WITH LINE
+外崎友亮,男,ACROSS ENTERTAINMENT
+梶裕貴,男,VIMS
+烏田裕志,男,Production Ace
+烏丸祐一,男,賢Production
+西地修哉,男,Herringbone
+西健亮,男,Aksent
+細谷佳正,男,自由身
+下野紘,男,I'm Enterprise
+相馬康一,男,Raccoon Dog
+相原嵩明,男
+小林親弘,男,圓企劃
+小林裕介,男,YU-RIN PRO
+小林直人,男,Trias
+小田久史,男,ARTSVISION
+小田柿悠太,男,81Produce
+小野賢章,男,Animo Produce
+小野友樹,男,無（事務所）、Lantis（唱片公司）
+小林龍之,男,avex pictures
+篠原孝太朗,男,AIR AGENCY
+興津和幸,男,Kekke Corporation
+星野貴紀,男,Office PAC
+須田祐介,男,劇團青年座
+鹽見宗真,男,Office-tb
+野間田一勝,男
+伊東健人,男,81Produce
+伊東隼人,男,自由身
+益山武明,男,賢Production
+櫻井透,男,賢Production
+羽多野涉,男,81 Produce
+玉木雅士,男,Aksent
+遠藤大智,男,賢Production
+遠藤廣之,男,JTB Entertainment
+越後屋浩介,男,Office PAC
+早川剛史,男,Production Tanc
+早志勇紀,男,Office PAC
+澤城千春,男,Stay Luck
+增元拓也,男,賢Production
+中川慶一,男,Aksent
+中村太亮,男,Mausu Promotion
+中村悠一,男,INTENTION
+中村章吾,男,Production Tanc
+中林俊史,男,Stardas21
+中尾良平,男,青二事務所
+中尾智,男,Office PAC
+中西英樹,男,Dandelion
+中澤匡智,男,東京俳優生活協同組合
+仲村宗悟,男,ACROSS ENTERTAINMENT
+株元英彰,男,AMUSE
+竹內良太,男,青二事務所
+竹內榮治,男,ARTVISION
+最上嗣生,男,賢Production
+佐藤拓也,男,賢Production
+佐佐木壽治,男
+佐佐木義人,男,AIR AGENCY
+M·A·O,女,Yellow Cab Next
+愛原亞里沙,女
+安濟知佳,女,avex pictures
+奧谷楓,女,青二事務所
+奧野香耶,女,81 PRODUCE
+安齋由香里,女,swallow
+巴奎依,女,Horipro
+八木真白,女,Millennium Pro
+白壁爽子,女,RME
+白砂沙帆,女,Mausu Promotion
+白石晴香,女,TOY'S FACTORY Inc.
+稗田寧寧,女,81 Produce
+北川里奈,女,三木事務所
+北原沙彌香,女,賢Production
+本渡楓,女,I'm Enterprise
+本宮佳奈,女,Production Baobab
+本泉莉奈,女,81Produce
+倉知玲鳳,女,株式會社S
+長谷美希,女,81 Produce
+長久友紀,女,青二事務所
+長繩麻理亞,女,I'm Enterprise
+長崎瞳,女,studio A-CAT
+長野佑紀,女,EARLY WING
+成海瑠奈,女,Stardust Promotion
+赤木春菜,女,Amuleto
+赤尾光,女,I'm Enterprise
+船戶百合繪,女,Amuse
+春日望,女,swallow
+春野七海,女,暫無
+春野杏,女,ARTSVISION
+村川梨衣,女,Stay Luck
+村井理沙子,女,Production Ace
+村上奈津實,女,YU-RIN PRO（事務所）
+川島海荷,女,LesPros娛樂
+川井田夏海,女,Intention
+川上莉央,女,V-FORK
+大地葉,女,VIMS
+大谷映美里,女,代代木動畫學院
+大和田仁美,女,青二Production
+大坪由佳,女,Early Wing
+大橋彩香,女,Horipro International
+大西沙織,女,I'm Enterprise
+大西亞玖璃,女,Link Plan
+大森日雅,女,ACROSS ENTERTAINMENT
+大野柚布子‎,女,Mausu Promotion
+大塚紗英,女
+島袋美由利,女,大澤事務所
+稻川英里,女,賢Production
+稻瀨葵,女
+荻野可鈴,女,Tambourine Artists
+東城日沙子,女,Early Wing
+東城咲耶子,女,Style Cube
+東山奈央,女,Intention
+渡邊遙,女,With Line
+都丸千代,女,EARLY WING
+法元明菜,女,Just Production
+飯坂紗幸,女,Across Entertainment
+飯田裡穗,女,放映新社（事務所）<br />NBCUniversal（唱片公司）
+飯田友子,女,I'm Enterprise
+飯野美紗子,女,Office PAC
+飯沼南實,女,Mausu Promotion
+飯塚麻結,女,Sunmusic
+紡木吏佐,女,響HiBiKi
+菲魯茲·藍,女,Raccoon Dog
+逢田梨香子,女,賢Production
+豐田萌繪,女,Style Cube
+峰田茉優,女,VIMS
+福山麻希,女,Clair
+福緒唯,女,81 Produce
+福原遙,女,研音
+富田美憂,女,Amuse
+岡田夢以,女,A-PLUS
+岡咲美保,女,I'm Enterprise
+掛川渚,女,Crocodile
+高槻加奈子,女,Lantis
+高井舞香,女,Mausu Promotion
+高柳知葉,女,Raccoon Dog
+高木美佑,女,81 PRODUCE
+高橋花林,女,青二Production
+高橋李依,女,81 Produce
+高橋未奈美,女,東京俳優生活協同組合
+高田憂希,女,Mausu Promotion
+高尾雪,女,A-Sketch
+高野麻里佳,女,青二Production
+各務華梨,女,株式會社S
+根岸愛,女,PLATINUM PRODUCTION
+根本流風,女,Millennium Pro
+宮本侑芽,女,劇團向日葵
+宮川若菜,女,C2機關
+宮崎珠子,女,東京俳優生活協同組合
+古賀葵,女,81Produce
+谷邊由美,女,C2機關
+谷尻麻理亞,女,Object
+谷口夢奈,女,ARTSVISION
+關口理咲,女,Mausu Promotion
+廣瀨有紀,女,青二事務所
+鬼頭明里,女,Raccoon Dog
+鶴野有紗,女,青二事務所
+和久井優,女,砂岡事務所
+和氣杏未,女,東京俳優生活協同組合
+河瀨茉希,女,ARTSVISION
+河野日和,女,FIRST WIND production
+黑木穗乃香,女,Stardust Promotion
+黑澤朋世,女,東寶藝能
+後藤彩佐,女,81 Produce
+厚地彩花,女,青二Production
+厚木那奈美,女,81 Produce
+戶松遙,女,Music Ray'n
+戶田惠,女,Kenyu Office
+花房裡枝,女,Oscar Promotion
+花井美春,女,IAM AGENCY
+花守由美里,女,m&amp;i
+會澤紗彌,女,Stardust Promotion
+集貝花,女,Atomic Monkey
+吉岡麻耶,女,Early Wing
+吉岡茉祐,女,81 PRODUCE
+吉田有里,女,Sigma Seven e
+吉武千颯,女,Apollo Bay
+嘉山未紗,女,ASOBI SYSTEM
+嘉陽光,女,THREE TREE
+加藤裡保菜,女,GALAXY PROMOTION
+岬奈子,女,HolyPeak
+江口菜子,女,自由身
+江原裕理,女,ufotable
+角元明日香,女,Apollo Bay
+降幡愛,女,ACROSS ENTERTAINMENT
+結名美月,女,VIMS
+結木由奈,女,放映新社
+結月春菜,女,自由身
+近藤玲奈,女,Hirata Office(聲優事務所)<br />日本哥倫比亞(唱片公司)
+金香里,女,Animo Produce
+金澤舞,女,Aksent
+井上穗乃花,女,Office Anemone
+井澤美香子,女,Sony Music Artists
+菅野真衣,女,Mausu Promotion
+久保田梨沙,女,Mausu Promotion
+久保田未夢,女,81 PRODUCE
+久野美咲,女,大澤事務所
+久住琳,女,I'm Enterprise
+久住小春,女,UP-FRONT GROUP
+駒形友梨,女,Apollo Bay（事務所）<br />Rokkan Music（唱片公司）
+橘英美里,女,Swallow
+堀籠沙耶,女,RME
+堀野紗也加,女,DSE
+瀨戶麻沙美,女,StarCrew
+藍原琴美,女,ATOMIC MONKEY
+涼本秋穗,女,VIMS
+鈴代紗弓,女,ARTSVISION
+鈴木愛奈,女,Lantis
+鈴木繪理,女,東京俳優生活協同組合
+鈴木實裡,女,e-stone music
+綾乃步美,女,研音
+嶺內知美,女,I'm Enterprise
+柳原可奈子,女,Mausu Promotion
+盧婷,女,I'm Enterprise
+麻倉桃,女,Music Ray'n
+美波和嘉菜,女,響HiBiKi
+美山加戀,女,Horipro
+木戶衣吹,女,Horipro International
+木野日菜,女,Amuleto
+木野雙葉,女,I'm Enterprise
+納富桃子,女,81 Produce
+奈波果林,女,Atomic Monkey
+楠木燈,女,Sony Music Artists
+南早紀,女,81 Produce
+南真由,女,演劇集團圓
+內山悠裡菜,女,Stardust Promotion
+內藤有海,女,賢Production
+內田秀,女,Calicom
+鳥部萬裡子,女,IAM Agency
+平島夏海,女,ONE EIGHT PROMOTION
+平山奈奈,女,Route Design
+平野有紗,女,TAB Production
+七瀨彩夏,女,AXL ONE
+齊藤朱夏,女,索尼音樂
+千本木彩花,女,I'm Enterprise
+千菅春香,女,Dandelion
+前島亞美,女,Avex Management
+前田佳織裡,女,Amuse
+淺倉唯,女,Libera
+茜屋日海夏,女,81 Produce
+橋本鞠衣,女,YU-RIN PRO
+橋本千波,女,VIMS
+芹澤優,女,81 PRODUCE（聲優事務所）<br />DIVE II entertainment（唱片公司）
+青山吉能,女,81 PRODUCE
+青山渚,女,Apollo Bay
+青木瑠璃子,女,Atomic Monkey
+青耶木真有,女,Fukuda＆Co.
+秋奈,女
+秋山繪理,女,Kenyu Office
+日岡夏美,女,Production Baobab
+日高里菜,女,大澤事務所
+入江麻衣子,女,WITH LINE
+若井友希,女,81 PRODUCE
+若山詩音,女,向日葵劇團
+三川華月,女,賢Production
+三村遙佳,女,Ace Crew Entertainment
+三村有己,女,向日葵劇團
+三角優華,女
+三澤紗千香,女,STARDUST（事務所）<br />Universal Music Japan（唱片公司）
+桑原由氣,女,Mausu Promotion
+澀谷梓希,女,81 Produce
+森島優花,女,81Produce
+森田涼花,女,Mausu Promotion
+森友莉世,女
+山北早紀,女,81 PRODUCE
+山根綺,女,青二事務所
+山口愛,女,向日葵劇團
+山口茜,女
+山崎惠理,女,Horipro
+山崎遙,女,ARTSVISION
+山田麻莉奈,女,Crocodile
+山田悠希,女,Production Ace
+山下七海,女,81 PRODUCE
+上白石萌音,女,東寶藝能
+上坂堇,女,Voice Kit(事務所)<br />KING RECORDS(唱片公司)
+上田麗奈,女,81Produce
+上條沙惠子,女,劇團SET
+神谷早矢佳,女,Crazy Box
+神戶光步,女,Office PAC
+社本悠,女,賢Production
+深川芹亞,女,AXL ONE
+生田輝,女,Queen's Ave.
+石見舞菜香,女,Raccoon Dog
+石飛惠里花,女,Holy Peak
+石橋桃,女,青二事務所
+石原夏織,女,Style Cube
+辻美優,女,青二事務所
+矢野妃菜喜,女,Sony Music Artists
+市之瀨加那,女,Sigma Seven
+守屋亨香,女,IAM Agency
+壽美菜子,女,Music Ray'n
+水瀨祈,女,AXL ONE
+水野朔,女,Sony Music Artists
+松村沙友理,女,乃木坂46合同會社（經紀公司）<br />N46Div. / Sony Music Records（唱片公司）
+松井曉波,女,Kenyu Office
+松田彩希,女
+松田利冴,女,I'm Enterprise
+松田颯水,女,ARTSVISION
+藪內滿裡奈,女,EARLY WING
+陶山惠實裡,女,Mausu Promotion
+桃野春菜,女,東京俳優生活協同組合
+藤田茜,女,賢Production
+藤原夏海,女,ARTSVISION
+天海由梨奈,女,81 Produce
+田村奈央,女,東京俳優生活協同組合
+田邊留依,女,Stay Luck
+田上真裡奈,女,mitt management
+田所梓,女,Horipro International
+田中愛美,女,81 Produce(聲優)<br /> WAVE MASTER(唱片公司)
+田中美海,女,81 PRODUCE
+田中有紀,女,Office PAC
+土師亞文,女,81 Produce
+土屋李央,女,大澤事務所
+兔丸七海,女,Kenyu Office
+丸岡和佳奈,女,WITH LINE
+尾崎由香,女,研音（事務所）<br />Warner Music Japan Inc.（唱片公司）
+西本里美,女,響HiBiKi
+西連寺亞希,女,自由身
+西尾夕香,女,響HiBiKi
+希水汐,女,BLACK SHIP
+汐入明日香,女,Stardust Promotion
+夏川椎菜,女,Music Ray'n
+下地紫野,女,青二事務所
+相坂優歌,女,Aptepro
+相川奈都姬,女,賢Production
+相良茉優,女,Digital Double
+向井莉生,女,81 Produce
+小白川愛菜,女,賢Production
+小坂井祐莉繪,女,crocodile
+小倉唯,女,Atomic Monkey(聲優事務所)<br />King Records(唱片公司)
+小池理子,女
+小峰愛未,女,Stardust Promotion
+小宮有紗,女,Box Corporation
+小林愛香,女,NEWCOME INC.（事務所）<br />TOY'S FACTORY（唱片公司）
+小泉萌香,女,AMUSE
+小山百代,女,STARDUST
+小市真琴,女,Atomic Monkey
+小岩井小鳥,女,Peerless Gerbera
+小野早稀,女
+小原好美,女,大澤事務所
+小原莉子,女,object
+小澤亞李,女,I'm Enterprise
+小珠光,女,DEARSTAGE
+篠田南,女,VIMS
+新井田泉,女,Earth Star Entertainment
+新田日和,女,ARTSVISION
+星乃葉月,女,81 Produce
+星守紗凪,女,Aster Office
+星希成奏,女,Sony Music Artists
+幸村惠理,女,VIMS
+幸田夢波,女,自由身
+緒方佑奈,女,I'm Enterprise
+岩井映美里,女,I'm Enterprise
+岩田陽葵,女,Mirai Production（聲優事務所）
+野村麻衣子,女,賢Production
+夜道雪,女,Quatre Stella
+野口百合,女,青二事務所
+野口瑠璃子,女,ARTSVISION
+葉月陽葵,女,Ace Crew Entertainment
+衣川里佳,女,FIRST WIND production
+伊波杏樹,女,Sony Music Artists
+伊達朱里紗,女,81Produce
+伊藤彩沙,女,響HiBiKi
+伊藤美來,女,Style Cube（聲優事務所）<br />日本哥倫比亞（唱片公司）
+礒部花凜,女,Amuse
+引坂理繪,女,Stay Luck
+櫻井春名,女,尾木Pro THE NEXT
+櫻井汐裡,女,Space Craft
+櫻田佳步,女,Spacecraft
+影山燈,女,IAM Agency
+永惠由彩,女,Quatrestella
+永野愛理,女,81 PRODUCE
+悠木碧,女,青二事務所
+雨宮天,女,Music Ray'n
+雨宮夕夏,女,I'm Enterprise
+宇山玲加,女,青年座映畫放送
+原島明里,女,東京俳優生活協同組合
+原田彩楓,女,V-FORK
+原優子,女,演劇集團 圓
+遠野光,女,響HiBiKi
+越乃奏,女,81 Produce
+月野萌亞,女,AliceProject
+早見沙織,女,I'm Enterprise
+澤田美晴,女,KeKKe Corporation
+曾我部英理,女,Earth Star Entertainment
+齋藤綾,女,賢Production
+朝井彩加,女,Intention
+朝日奈丸佳,女,81 Produce
+芝崎典子,女,OgiPro The Next
+植田光,女,Office Anemone
+直田姬奈,女,animo produce
+指出毬亞,女,WITH LINE
+中島唯,女,Mausu Promotion
+中島由貴,女,Beffect（事務所）<br />NBC Universal Entertainment（唱片公司）
+中野彩麻,女,Stay Luck
+仲谷明香,女,Animo Produce
+築田行子,女,MILLENNIUM PRO(聲優事務所)<br />Victor Entertainment(唱片公司)
+諸星堇,女,劇團向日葵（事務所）<br />FlyingDog（唱片公司）
+諏訪奈奈香,女,Stay-Luck（事務所）<br />日本哥倫比亞（唱片公司）
+佐伯伊織,女,Swallow
+佐倉綾音,女,I'm Enterprise
+佐倉薰,女,Remax
+佐藤日向,女,Amuse
+佐藤亞美菜,女,大澤事務所
+佐武宇綺,女,LesPros Entertainment
+佐佐木李子,女,Honeycomb Entertainment<br />朝日電視台Music<br />MAGES.（唱片公司）
+佐佐木琴子,女,Style Cube
+佐佐木未來,女,響HiBiKi
+阿座上洋平,男,青二Production
+安部亮馬,男,OgiPro The Next
+安田陸矢,男,ARTSVISION
+安田廉平,男,AIR AGENCY
+奧山敬人,男,Style Cube
+八代拓,男,VIMS
+坂井易直,男,青二事務所
+坂泰斗,男,大澤事務所
+保住有哉,男,賢Production
+北村諒,男,<span lang="ja">株式會社アイズ</span>
+本城雄太郎,男,向日葵劇團
+比嘉良介,男,Atomic Monkey
+筆村榮心,男,Style Cube
+濱岡敬祐,男,AIR AGENCY
+濱健人,男,賢Production
+財滿健太,男,Apte pro
+柴崎哲志,男,尾木PRO THE NEXT
+長井新,男,m&amp;i
+池田純矢,男,BaRU株式會社
+池田恭祐,男,Max Mix
+赤坂柾之,男,Nexeed
+重松千晴,男,AIR AGENCY
+川島零士,男,AIR AGENCY
+村上喜紀,男,ACROSS ENTERTAINMENT
+大西弘祐,男,ARTSVISION
+大塚剛央,男,I'm Enterprise
+地藏堂武大,男,81 Produce
+渡邊拓海,男,ARTS VISION
+兒玉卓也,男,尾木Pro THE NEXT
+峰田大夢,男,Stardust Promotion
+福間竣兵,男,amuleto
+富澤風鬥,男,日本兒童劇團
+高塚智人,男,YU-RIN PRO
+廣瀨大介,男,KeKKe Corporation
+宮瀨尚也,男,Kenyu Office
+宮崎遊,男,東京俳優生活協同組合
+古賀明,男,Production Baobab
+古田一紀,男,Mausu Promotion
+觀世智顯,男,賢Production
+光富崇雄,男
+廣瀨裕也,男,ARTSVISION
+海老名翔太,男,劇團俳優座
+合田葵,男,81 Produce
+花江夏樹,男,Across Entertainment
+吉永拓鬥,男,向日葵劇團
+江田拓寬,男,81 Produce
+金城慶,男,AIR AGENCY
+井上寶,男,ACROSS ENTERTAINMENT
+井上雄貴,男,Mausu Promotion
+菊池勇成,男,WITH LINE
+橘龍丸,男,Stay Luck
+堀江瞬,男,Pro Fit
+鈴木崚汰,男,VIMS
+馬鳥勝悟,男,Aksent
+梅原裕一郎,男,ARTSVISION
+綿貫龍之介,男,Remax
+木村昴,男,Atomic Monkey
+木暮晃石,男,81 Produce
+木內太郎,男,AIR AGENCY
+楠賢將,男,BLoomZ
+內山昂輝,男,向日葵劇團
+內田雄馬,男,I'm Enterprise
+浦和希,男,VIMS
+浦尾嶽大,男,尾木Pro THE NEXT
+齊藤壯馬,男,81Produce
+前田誠二,男,響HiBiKi
+千葉翔也,男,sigma 7
+橋本晃太朗,男,81 Produce
+橋本祥平,男,CAST CORPORATION
+青木優太,男,WITH LINE
+青木志貴,男,三木Production
+入江玲於奈,男,Atomic Monkey
+三好晃祐,男,Mausu Promotion
+桑田直樹,男,81 Produce
+桑野晃輔,男,mitt management
+山谷祥生,男,FIRST WIND production
+山下誠一郎,男,大澤事務所
+上村祐翔,男,向日葵劇團
+神木隆之介,男,Co-LaVo
+深町壽成,男,Apte Pro
+石川界人,男,Pro Fit
+石谷春貴,男,Pro Fit
+石井馬克,男,Aksent
+石井孝英,男,WITH LINE
+石毛翔彌,男,INTENTION
+市川蒼,男,大澤事務所
+市川太一,男,VIMS
+水中雅章,男,Production Baobab
+松岡洋平,男,Raccoon Dog
+太田悠介,男,ARISE PROJECT
+鵜澤正太郎,男,Office PAC
+天崎滉平,男,I'm Enterprise
+田中誠人,男,自由身
+田中進太郎,男,Space Craft
+畠山航輔‎,男,Horipro
+畠中祐,男,賢Production（事務所）<br />Lantis（唱片公司）
+土田玲央,男,81 Produce
+土屋神葉,男,向日葵劇團
+梶原岳人,男,東京俳優生活協同組合
+武內駿輔,男,81 Produce
+汐谷文康,男,東京俳優生活協同組合
+西山宏太朗,男,81 Produce
+下鶴直幸,男,Rush Style
+小宮逸人,男,ARTSVISION
+小林大紀,男,81Produce
+小林千晃,男,大澤事務所
+小杉史哉,男,自由身
+小松昌平,男,賢Production
+新倉健太,男,AIR AGENCY
+新川麗,男,Mausu Promotion
+新田杏樹,男,81 PRODUCE
+新祐樹,男,賢Production
+熊谷健太郎,男,俳協
+熊澤玄德,男,AIR AGENCY
+野津山幸宏,男,Rush Style
+伊藤節生,男,AIR AGENCY
+永塚拓馬,男,I'm Enterprise
+永野由祐,男,ARTSVISION
+有隅融,男,81 Produce
+增田俊樹,男,TOY'S FACTORY
+折原秋良,男,81 Produce
+植田圭輔,男,砂岡事務所
+中島良樹,男,81 Produce
+中山祥德,男,LINK PLAN
+中務貴幸,男,B-Box
+子安光樹,男,T's Factory
+佐藤圭輔,男
+佐藤仰之,男,無
+佐藤祐吾,男,WITH LINE
+佐藤元,男,I'm Enterprise
+阿保瑪麗亞,女,81 Produce
+白城奈央,女,RD
+柴崎真璃奈,女,81 Produce
+長谷川玲奈,女,Crocodile
+春名風花,女,Production Ace
+春咲暖,女,SONY MUSIC ARTISTS
+丹生明里,女,<a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://ja.wikipedia.org/wiki/Seed_%26_Flower">Seed &amp; Flower合同會社</a>/<a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://zh.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E7%B4%A2%E5%B0%BC%E9%9F%B3%E6%A8%82%E5%A8%9B%E6%A8%82">Sony Music</a>
+渡瀨結月,女,響HiBiKi
+二宮結衣,女,Horipro International
+反田葉月,女,PLATINUM PRODUCTION
+逢來凜,女,Horipro International
+高尾奏音,女,LINK PLAN
+谷花音,女,FlyingStar Records(唱片公司)<br />THEATRE ACADEMY(經紀公司)
+關根瞳,女,I'm Enterprise
+廣瀨千夏,女,Atomic Monkey
+廣瀨世華,女,ARTSVISION
+花谷麻妃,女
+菅圓,女,Millennium Pro
+進藤天音,女,響HiBiKi
+橘美來,女,Music Ray'n
+林鼓子,女,81 Produce
+鈴木梨央,女,JobbyKids
+清原果耶,女,Amuse
+松浦愛弓,女,Theatre Academy
+松永茜,女,Horipro International
+深川瑠華,女,響HiBiKi
+天野心愛,女,Space Craft
+町山芹菜,女,AIR AGENCY
+堤雪菜,女,81 Produce
+小林星蘭,女,THEATRE ACADEMY(經紀公司)
+相川奏多,女,Music Ray'n
+熊田茜音,女,Apollo Bay（事務所）<br />Lantis（唱片公司）
+岩倉梓,女,WITH LINE<sup id="cite_ref-withline_1-0" class="reference"><a href="#cite_note-withline-1">&#91;1&#93;</a></sup>
+岩淵桃音,女,Office PAC
+羊宮妃那,女,青二事務所
+野口衣織,女,代代木動畫學院
+伊達小百合,女,Apollo Bay
+原涼子,女,Space Craft Group
+遠藤璃菜,女,THEATRE ACADEMY
+早瀨雪未,女,ARTSVISION
+增田裡紅,女,Digital Double
+佐佐木理央,女,向日葵劇團
+佐佐木舞香,女,代代木動畫學院
+三浦禮,男,Sony Music Artists
+石橋陽彩,男,avex management
+野島透也,男,松竹Entertainment
+伊瀨結陸,男,VIMS
+櫻井優輝,男,向日葵劇團
+真白健太朗,男,Horipro
+阿部菜摘子,女,INTENTION
+阿部裡果,女,VIMS
+阿部笑華,女,AIR AGENCY
+安國愛菜,女,Nexeed
+岸本百惠,女,Kenyu Office
+奧村真由,女,EARLY WING
+奧井優子,女,Aslead Company
+奧友沙絢,女,81 Produce
+八百屋杏,女,Remax
+八島沙羅羅,女,Amuleto
+八卷安奈,女,Remax
+八木侑紀,女,Production Ace
+八神結香,女,Across Entertainment
+白澤加奈惠,女
+柏山奈奈美,女,Holy Peak
+北守彩香,女,DMM music
+北野更,女,Kekke Corporation
+拜師美穗,女,Yellow-Tail
+阪田佳代,女,Sigma Seven
+寶木久美,女,Linkarts
+本山香織,女,B-Box
+本鄉裡實,女,EARLY WING
+濱本志織裡,女,Winner Entertainment
+濱口綾乃,女,Mausu Promotion
+濱崎奈奈,女,I'm Enterprise
+並木櫻,女,Sigma Seven e
+薄井友裡,女,I'm Enterprise
+倉持若菜,女,CLARE VOICE
+倉岡水巴,女,舞夢Pro
+蒼乃輝,女,RME
+柴田倫佳,女,81 Produce
+柴田芽衣,女,81 Produce
+長谷川明子,女,ARTSVISION
+長谷川育美,女,Raccoon Dog
+長江里加,女,青二事務所
+成花,女,81 Produce
+澄田瑪利亞,女
+鋤柄沙智,女,(原)CSR Corp.<br />(現)自由身
+川島悠美,女,Kenyu Office
+川崎琴,女,(原)Production Ace研究所生
+川口莉奈,女,青二事務所
+川口櫻,女,青二事務所
+川上彩,女,賢Production
+川上千尋,女,Space Craft
+川莊美雪,女,青二事務所
+春川友紀,女,81 Produce
+春村奈奈,女,VIMS
+春花蘭,女,ARTSVISION
+春瀨夏美,女,Mausu Promotion
+村井美里,女,I'm Enterprise
+村瀨迪與,女,Mausu Promotion
+村上麻衣,女,AIR AGENCY
+村上真夏,女,Arise Project
+村田遙,女,Mausu Promotion
+大井麻利衣,女,81Produce
+大南友希,女,B-Box
+大內茜,女,LEOPARD STEEL
+大平鶩,女,Office PAC
+大田菜乃子,女,Mausu Promotion
+島田愛野,女,Rush Style
+島形麻衣奈,女,Production Ace
+道井悠,女,crocodile
+稻垣好,女,I'm Enterprise
+荻野佳奈,女,賢Production
+荻野葉月,女,81 Produce
+東條加那子,女,AXL ONE
+渡邊理沙,女,賢Production
+渡邊佳美,女,KeKKe Corporation
+渡邊優裡奈,女,Mausu Promotion
+渡邊由香里,女,Office PAC
+渡部紗弓,女,Sigma Seven
+渡谷美帆,女,Remax
+多田木乃美,女,D-COLOR
+二之宮愛子,女,ARISE PROJECT
+筏井香苗,女,RME
+飯泉桃音,女,Amuleto
+飯田光,女,Raccoon Dog
+芳野由奈,女,ULTRA EGG
+風間萬裕子,女,I'm Enterprise
+逢澤由利香,女,Stay Luck
+福島亞美,女,WARNER MUSIC AGENCY
+福積沙耶,女,EARLY WING
+福沙奈惠,女,Peerless Gerbera
+福田芽衣,女,Production Ace
+伏見春香,女,81 Produce
+富樫和美,女,Production Baobab
+岡本嘉子,女,ARTSVISION
+岡純子,女,Office PAC
+岡田惠,女,Kenyu Office
+岡田幸子,女,Raccoon Dog
+高倉有加,女,81 Produce
+高宮彩織,女,AXL ONE
+高槻莉那,女,AXL-ONE
+高木友梨香,女,sitoa
+高橋雛子,女,Stay Luck
+高杉薰,女,Still Wood Garden
+高辻麗,女
+根本優奈,女,Crazy Box
+宮本茉奈,女,D-Color
+宮島惠美,女,Aksent
+宮瀨玲奈,女
+宮下典子,女,Office薰
+宮下早紀,女,Sigma Seven e
+宮原颯希,女,81 Produce
+古城門志帆,女,賢Production
+古川由利奈,女,自由身
+谷野悠裡子,女,RME
+關根明良,女,aptepro
+關根有咲,女,青二事務所
+關山美沙紀,女,81 Produce
+貫井柚佳,女,AIR AGENCY
+廣瀨沙耶,女,ACROSS ENTERTAINMENT
+廣瀨有香,女,Aksent
+廣田悠美,女,Mausu Promotion
+龜谷理子,女,LAL
+海乃琉璃,女
+海田朱音,女,DMM music
+河村梨惠,女,Wise Production
+河村友美,女
+河井晴菜,女,VIMS
+河瀨詩,女
+河野茉莉,女,AIR AGENCY
+和多田美咲,女,青二事務所
+和泉風花,女,VIMS
+和優希,女,Atomic Monkey
+合田繪利,女,賢Production
+鶴田真希,女,青二事務所
+黑瀨優子,女,VIMS
+橫林奈津子,女,81 Produce
+橫田彩,女,RME
+弘松芹香,女,賢Production
+花瀨麻美,女,WISE PRODUCTION
+花藤蓮,女,Production Baobab
+荒井瑠裡,女,Apollo Bay
+樺山南,女,尾木Pro THE NEXT
+積田加代子,女
+吉富睦,女,WONDER SPACE
+吉岡美咲,女,m&amp;i
+吉岡香織,女,RME
+吉田麻實,女,ARTSVISION
+吉田幸代,女,RME
+佳穗成美,女,81Produce

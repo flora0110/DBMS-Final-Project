@@ -86,7 +86,7 @@ def anima_page():
 def character_page():
     # set the parameter of GET
     page = request.args.get('page', default=0, type=int)
-    anima_name = request.args.get('anima_name', default="all")
+    anima_name = request.args.get('anima_name', default="all").strip()
 
     # PC works
     # herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
@@ -145,7 +145,7 @@ def character_page():
 def voice_page():
     # set the parameter of GET
     page = request.args.get('page', default=0, type=int)
-    voice_name = request.args.get('voice_name', default="all")
+    voice_name = request.args.get('voice_name', default="all").strip()
 
     # PC works
     # herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
