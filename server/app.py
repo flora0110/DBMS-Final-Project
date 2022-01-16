@@ -6,6 +6,7 @@ import psycopg2
 app = Flask(__name__)
 app._static_folder = './static'
 
+
 @app.route('/')
 def hello_world():  # put application's code here
     return anima_page()
@@ -26,7 +27,6 @@ def anima_page():
 
     # create cursor
     cursor = conn.cursor()
-
 
     # set SQL select table
     SQL_select_command = """
@@ -93,18 +93,14 @@ def character_page():
     # create cursor
     cursor = conn.cursor()
 
-    ####################### here{
-
     # set SQL select table
     SQL_select_command = """
         SELECT * FROM character
     """
     if anima_name != "all":
         SQL_select_command = f"""
-                SELECT * FROM character WHERE anima like '%{ anima_name }%';
+            SELECT * FROM character WHERE anima like '%{ anima_name }%';
         """
-
-    ####################### }here
 
     # execute SQL
     cursor.execute(SQL_select_command)
@@ -119,6 +115,7 @@ def character_page():
 
     # execute SQL
     cursor.execute(SQL_select_command)
+
     # close cursor
     cursor.close()
     # close connect
@@ -133,6 +130,7 @@ def character_page():
         right = page
 
     return render_template("character.html", datas=data, anima_name=anima_name, left=left, right=right, page=page)
+
 
 
 @app.route('/ecioV')
@@ -156,7 +154,7 @@ def voice_page():
     """
     if voice_name != "all":
         SQL_select_command = f"""
-                SELECT * FROM voice WHERE name like '%{voice_name}%';
+            SELECT * FROM voice WHERE name like '%{voice_name}%';
         """
 
 

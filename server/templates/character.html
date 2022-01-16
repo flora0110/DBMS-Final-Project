@@ -47,9 +47,9 @@
                 <thead class="bg-dark text-white">
                     <tr>
                         <th scope="col" class="col-1"></th>
-                        <th scope="col" class="col-3">角色名稱</th>
-                        <th scope="col" class="col-4">動畫</th>
-                        <th scope="col" class="col-4">配音</th>
+                        <th scope="col" class="col-3 p-2">角色名稱</th>
+                        <th scope="col" class="col-3 p-2">動畫</th>
+                        <th scope="col" class="col-5 p-2">配音</th>
                     </tr>
                 </thead>
                 <tbody id="test">
@@ -58,7 +58,12 @@
                         <th scope="row" class="h6 text-black-50" ></th>
                         <td>{{ data[0] }}</td>
                         <td>{{ data[1] }}</td>
-                        <td>{{ data[2] }}</td>
+                        <td>
+                            <form class="d-flex col-3" action="/retcarahC">
+                                <button type="button" class="col-1 btn btn-light" onclick="location.href='/ecioV?voice_name={{ data[2] }}'"
+                                        style="width:200px; background: none; border: none;">{{ data[2] }}</button>
+                            </form>
+                        </td>
                     </tr>
                 {% endfor %}
                 </tbody>
