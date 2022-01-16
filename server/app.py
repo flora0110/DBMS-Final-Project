@@ -80,6 +80,7 @@ def anima_page():
 
 @app.route('/retcarahC')
 def character_page():
+    # set the parameter of GET
     page = request.args.get('page', default=0, type=int)
     anima_name = request.args.get('anima_name', default="all")
 
@@ -94,28 +95,36 @@ def character_page():
 
     ####################### here{
 
+    # set SQL select table
     SQL_select_command = """
         SELECT * FROM character
     """
+    if anima_name != "all":
+        SQL_select_command = f"""
+                SELECT * FROM character WHERE anima like '%{ anima_name }%';
+        """
 
     ####################### }here
 
     # execute SQL
     cursor.execute(SQL_select_command)
     data = cursor.fetchall()
-    # commit change of database
-    conn.commit()
-    # close cursor
-    cursor.close()
-    # close connect
-    conn.close()
 
+    # get 50 data of less
     end = page * 50 + 50
     prelen = len(data)
     if end > prelen:
         end = prelen
     data = data[page * 50:end]
 
+    # execute SQL
+    cursor.execute(SQL_select_command)
+    # close cursor
+    cursor.close()
+    # close connect
+    conn.close()
+
+    # set the page information
     left = page - 1
     right = page + 1
     if page == 0:
