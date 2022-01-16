@@ -19,8 +19,12 @@ def anima_page():
     year = request.args.get('year', default="all")
     season = request.args.get('season', default="all")
 
-    herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
-    DATABASE_URL = os.popen(herokuCLI_command).read()[:-1]
+    # PC works
+    # herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
+    # DATABASE_URL = os.popen(herokuCLI_command).read()[:-1]
+
+    # Heroku works
+    DATABASE_URL = os.environ['DATABASE_URL']
 
     # connect with database
     conn = psycopg2.connect(DATABASE_URL, sslmode='require')
@@ -84,8 +88,12 @@ def character_page():
     page = request.args.get('page', default=0, type=int)
     anima_name = request.args.get('anima_name', default="all")
 
-    herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
-    DATABASE_URL = os.popen(herokuCLI_command).read()[:-1]
+    # PC works
+    # herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
+    # DATABASE_URL = os.popen(herokuCLI_command).read()[:-1]
+
+    # Heroku works
+    DATABASE_URL = os.environ['DATABASE_URL']
 
     # connect with database
     conn = psycopg2.connect(DATABASE_URL, sslmode='require')
@@ -139,8 +147,12 @@ def voice_page():
     page = request.args.get('page', default=0, type=int)
     voice_name = request.args.get('voice_name', default="all")
 
-    herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
-    DATABASE_URL = os.popen(herokuCLI_command).read()[:-1]
+    # PC works
+    # herokuCLI_command = 'heroku config:get DATABASE_URL -a anima-database-fe'
+    # DATABASE_URL = os.popen(herokuCLI_command).read()[:-1]
+
+    # Heroku works
+    DATABASE_URL = os.environ['DATABASE_URL']
 
     # connect with database
     conn = psycopg2.connect(DATABASE_URL, sslmode='require')
