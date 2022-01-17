@@ -330,9 +330,9 @@ def voice_company():
 
 def main():
     animation()        # done
-    anima_company()    # done
+    #anima_company()    # done
     voice()            # done
-    voice_company()    # done
+    #voice_company()    # done
     character()  # done
     print("hello world")
 
